@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
-public class MB_DraggableItem : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
+public class MB_DraggableItem : MonoBehaviour, IDraggableItem
 {
   public Image image;
   [HideInInspector] public Transform parentAfterDrag;

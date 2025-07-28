@@ -1,17 +1,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BrewingStack : MonoBehaviour
+public class MB_BrewingStack : MonoBehaviour
 {
-    public Stack<Pour> Pours { get; set; }
+    public Stack<SO_Pour> Pours { get; set; }
     [SerializeField] int maxPour = 10;
     void Start()
     {
-        Pours = new Stack<Pour>(maxPour);
+        Pours = new Stack<SO_Pour>(maxPour);
     }
-    public void AddPour(Pour pour)
+    public void AddPour(SO_Pour pour)
     {
-        Pours ??= new Stack<Pour>(maxPour);
+        Pours ??= new Stack<SO_Pour>(maxPour);
         if (Pours.Count >= maxPour)
         {
             Debug.LogWarning($"Cannot add pour: {pour.Name}. Brewing stack is full with {maxPour} pours.");

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7073575253712485594}
   - component: {fileID: 7876317153568098932}
   - component: {fileID: 5601612686189717518}
+  - component: {fileID: 8307747583703365848}
   m_Layer: 5
   m_Name: StatBox
   m_TagString: Untagged
@@ -118,6 +119,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 0
   m_VerticalFit: 0
+--- !u!114 &8307747583703365848
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043782378234942605}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0e7e8d578c0d845bb10b3d92c7815a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bitternessText: {fileID: 7101438123694175342}
+  brewingStack: {fileID: 0}
 --- !u!1 &2782177901938543362
 GameObject:
   m_ObjectHideFlags: 0

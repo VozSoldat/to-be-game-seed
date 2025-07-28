@@ -5,7 +5,7 @@ using UnityEngine;
 public class MB_ShowStatUI : MonoBehaviour
 {
     [SerializeField] TextMeshProUGUI bitternessText;
-    [SerializeField] private BrewingStack brewingStack;
+    [SerializeField] private MB_BrewingStack brewingStack;
     // private Dictionary<StatType, FloatReference> stats;
     private void Update()
     {

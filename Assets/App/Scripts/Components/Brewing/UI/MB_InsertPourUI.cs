@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class MB_InsertPourUI : MonoBehaviour
 {
-    [SerializeField] Pour pour;
-    [SerializeField] BrewingStack brewingStack;
+    [SerializeField] SO_Pour pour;
+    [SerializeField] MB_BrewingStack brewingStack;
 
     public void InsertPour()
     {
