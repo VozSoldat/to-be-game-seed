@@ -1,10 +1,10 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseUI;
+
     public void OnRestartPress()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
