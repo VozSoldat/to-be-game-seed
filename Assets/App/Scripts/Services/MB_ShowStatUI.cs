@@ -4,18 +4,18 @@ using UnityEngine;
 
 public class MB_ShowStatUI : MonoBehaviour
 {
-    [SerializeField] TextMeshProUGUI bitternessText;
     [SerializeField] private MB_BrewingStack brewingStack;
-    // private Dictionary<StatType, FloatReference> stats;
-    private void Update()
-    {
-        bitternessText.text = brewingStack.TotalBitterness.Value.ToString("F2");
-    }
-}
+    [SerializeField] private TextMeshProUGUI sweetnessText;
+    [SerializeField] private TextMeshProUGUI bitternessText;
+    [SerializeField] private TextMeshProUGUI temperatureText;
 
-public enum StatType
-{
-    Bitterness,
-    Sweetness,
-    Temperature
+    public void Update()
+    {
+        if (brewingStack != null)
+        {
+            sweetnessText.text = $"Sweetness: {brewingStack.TotalSweetness}";
+            bitternessText.text = $"Bitterness: {brewingStack.TotalBitterness}";
+            temperatureText.text = $"Temperature: {brewingStack.TotalTemperature}";
+        }
+    }
 }
