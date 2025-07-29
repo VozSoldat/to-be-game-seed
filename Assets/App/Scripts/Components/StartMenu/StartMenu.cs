@@ -1,12 +1,12 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class StartMenu
+public class StartMenu : MonoBehaviour
 {
-    public void Start()
+    public void NewGame()
     {
-        Debug.Log("Start menu option clicked.");
-        SceneManager.LoadScene("");
+        Debug.Log("New game option clicked.");
+        SceneManager.LoadScene("BrewingDemo");
     }
 
     public void Settings()
