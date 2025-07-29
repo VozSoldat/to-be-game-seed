@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53491efc198d0b47bb6234c4827a82f, type: 3}
+  m_Name: Lumaka
+  m_EditorClassIdentifier: 
+  itemName: Lumaka
+  itemIcon: {fileID: 1315875540267027392, guid: 2586a5da2e3ad0744a71a612034abba5, type: 3}
+  sweetness: 0
+  bitterness: 1
+  temperature: 2

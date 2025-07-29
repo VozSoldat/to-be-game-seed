@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class MB_InsertPourUI : MonoBehaviour
 {
-    [SerializeField] SO_Pour pour;
+    [SerializeField] ItemData pour;
     [SerializeField] MB_BrewingStack brewingStack;
 
     public void InsertPour()
@@ -10,7 +10,7 @@ public class MB_InsertPourUI : MonoBehaviour
         if (pour != null && brewingStack != null)
         {
             brewingStack.AddPour(pour);
-            Debug.Log($"Inserted pour: {pour.Name}");
+            Debug.Log($"Inserted pour: {pour.itemName}");
         }
         else
         {
