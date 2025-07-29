@@ -26,6 +26,13 @@ public class ItemCardUI : MonoBehaviour
         {   
             draggable.itemData = data;
         }
+
+        DraggableItemGhost draggableGhost = GetComponent<DraggableItemGhost>();
+        if (draggableGhost != null)
+        {
+            draggableGhost.itemData = data;
+            draggableGhost.iconImage = iconImage;
+        }
     }
 
 }
