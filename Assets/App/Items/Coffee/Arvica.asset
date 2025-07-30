@@ -14,6 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Arvica
   itemIcon: {fileID: -5709385630097516063, guid: 2586a5da2e3ad0744a71a612034abba5, type: 3}
+  category: 1
   sweetness: 0
   bitterness: 1
   temperature: 1
+  itemBuffs: 

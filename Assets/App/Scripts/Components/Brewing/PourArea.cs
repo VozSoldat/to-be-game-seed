@@ -9,7 +9,7 @@ public class DropTarget : MonoBehaviour, IDropHandler
 
     public void OnDrop(PointerEventData eventData)
     {
-        DraggableItem dragged = eventData.pointerDrag?.GetComponent<DraggableItem>();
+        DraggableItemGhost dragged = eventData.pointerDrag?.GetComponent<DraggableItemGhost>();
         if (dragged != null)
         {
             if (brewingStack == null)

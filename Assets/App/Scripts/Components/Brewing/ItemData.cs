@@ -1,10 +1,28 @@
 using UnityEngine;
 
+public enum ItemCategory
+{
+    Glass,
+    Coffee,
+    ElementalStone,
+    Milk,
+    MagicItem
+}
+
+public enum ItemBuff
+{
+    SharpInstinct,
+    CreativitySpark,
+    CalmMind,
+    MindClarity
+}
+
 [CreateAssetMenu(fileName = "New Item", menuName = "Items/Item")]
 public class ItemData : ScriptableObject
 {
     public string itemName;
     public Sprite itemIcon;
+    public ItemCategory category;
 
     [Range(-5, 5)]
     public int sweetness;
@@ -14,4 +32,6 @@ public class ItemData : ScriptableObject
 
     [Range(-5, 5)]
     public int temperature;
+    
+    public ItemBuff[] itemBuffs;
 }

@@ -11,9 +11,7 @@ GameObject:
   - component: {fileID: 7954771659925714603}
   - component: {fileID: 8007961002845727129}
   - component: {fileID: 7159249939192636173}
-  - component: {fileID: 1736072701147916448}
   - component: {fileID: 1756765641024839146}
-  - component: {fileID: 3139704595719659285}
   m_Layer: 5
   m_Name: Icon
   m_TagString: Untagged
@@ -78,20 +76,6 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1736072701147916448
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732622202746830282}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 74a6e8b521663094b988255295229b22, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  itemData: {fileID: 0}
-  canvas: {fileID: 0}
 --- !u!225 &1756765641024839146
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -104,21 +88,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
---- !u!114 &3139704595719659285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 732622202746830282}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 52be6582f1a2ff7498b062d9bf727e9f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
-  iconImage: {fileID: 7159249939192636173}
-  itemData: {fileID: 0}
 --- !u!1 &856125122361368967
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +413,7 @@ GameObject:
   - component: {fileID: 7971561498178364072}
   - component: {fileID: 3625064156752600500}
   - component: {fileID: 6749001424278263344}
+  - component: {fileID: 702998105292156981}
   m_Layer: 5
   m_Name: ItemCard
   m_TagString: Untagged
@@ -573,6 +543,21 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
+--- !u!114 &702998105292156981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2330940093215377700}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52be6582f1a2ff7498b062d9bf727e9f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  canvas: {fileID: 0}
+  iconImage: {fileID: 7159249939192636173}
+  itemData: {fileID: 0}
 --- !u!1 &7979160014879529461
 GameObject:
   m_ObjectHideFlags: 0

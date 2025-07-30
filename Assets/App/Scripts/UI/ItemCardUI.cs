@@ -21,10 +21,11 @@ public class ItemCardUI : MonoBehaviour
         bitternessText.text = $"B: {data.bitterness}";
         temperatureText.text = $"T: {data.temperature}";
 
-        DraggableItem draggable = iconImage.GetComponent<DraggableItem>();
-        if (draggable != null)
-        {   
-            draggable.itemData = data;
+        DraggableItemGhost draggableGhost = GetComponent<DraggableItemGhost>();
+        if (draggableGhost != null)
+        {
+            draggableGhost.itemData = data;
+            draggableGhost.iconImage = iconImage;
         }
     }
 
