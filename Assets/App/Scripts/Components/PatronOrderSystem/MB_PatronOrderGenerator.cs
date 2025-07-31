@@ -3,10 +3,11 @@ using UnityEngine;
 
 public class MB_PatronOrderGenerator : MonoBehaviour
 {
-    [SerializeField] MatrixCombinationCalculator _matrixCombinationCalculator;
+    IMatrixCalculator _matrixCalculator;
 
     [SerializeField] ItemData[] _operandItemDataset;
     [SerializeField] int _combinationSize = 2;
+    [SerializeField] CalculatorType _calculatorType;
 
 
     int[][] ItemDataToArrayOfArray(ItemData[] items)
@@ -31,18 +32,37 @@ public class MB_PatronOrderGenerator : MonoBehaviour
         .ToArray();
     }
 
-    void Start()
-    {
-        _matrixCombinationCalculator = new MatrixCombinationCalculator(
-            ItemDataToArrayOfArray(_operandItemDataset)
-        );
-    }
+    // void Start()
+    // {
+    //     _matrixCombinationCalculator = new MatrixRepetitiveCombinationCalculator(
+    //         ItemDataToArrayOfArray(_operandItemDataset)
+    //     );
+    // }
 
     public ItemData[] GetCombinations()
     {
-        var resultArrays = _matrixCombinationCalculator.GetSumsForCombinationSize(_combinationSize);
+        var resultArrays = _matrixCalculator.GetSumsForCombinationSize(_combinationSize);
         return ArrayOfArrayToItemData(resultArrays);
+    }
+    void OnValidate()
+    {
+        _matrixCalculator = _calculatorType switch
+        {
+            CalculatorType.MatrixCombinationCalculator => new MatrixCombinationCalculator(
+                ItemDataToArrayOfArray(_operandItemDataset)
+            ),
+            CalculatorType.MatrixRepetitiveCombinationCalculator => new MatrixRepetitiveCombinationCalculator(
+                ItemDataToArrayOfArray(_operandItemDataset)
+            ),
+            _ => throw new System.NotImplementedException($"Calculator type {_calculatorType} is not implemented.")
+        };
     }
 
 
+}
+
+public enum CalculatorType
+{
+    MatrixCombinationCalculator,
+    MatrixRepetitiveCombinationCalculator
 }

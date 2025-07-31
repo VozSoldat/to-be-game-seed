@@ -2,12 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-[Serializable]
 /// <summary>
 /// Sebuah kelas untuk menghitung semua kemungkinan hasil penjumlahan
 /// dari kombinasi matriks-matriks (direpresentasikan sebagai array 1D) operan.
 /// </summary>
-public class MatrixCombinationCalculator
+[Serializable]
+public class MatrixCombinationCalculator : IMatrixCalculator
 {
     // Field readonly untuk menyimpan matriks-matriks operan.
     private readonly int[][] _operandMatrices;
