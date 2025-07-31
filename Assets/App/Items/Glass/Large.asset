@@ -13,11 +13,5 @@ MonoBehaviour:
   m_Name: Large
   m_EditorClassIdentifier: 
   itemName: Large
-  itemIcon: {fileID: 5402251393668616626, guid: bc4deb20f8325c34185c4251cebb8663, type: 3}
-  category: 0
-  sweetness: 0
-  bitterness: 0
-  temperature: 0
-  itemBuffs: 
+  itemIcon: {fileID: 971075585, guid: 829ee331f8d35ef43949204549e4034a, type: 3}
   maxCapacity: 5
-  glassSprite: {fileID: 5402251393668616626, guid: bc4deb20f8325c34185c4251cebb8663, type: 3}

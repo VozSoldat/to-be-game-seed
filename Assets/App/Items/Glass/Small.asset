@@ -13,11 +13,5 @@ MonoBehaviour:
   m_Name: Small
   m_EditorClassIdentifier: 
   itemName: Small
-  itemIcon: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
-  category: 0
-  sweetness: 0
-  bitterness: 0
-  temperature: 0
-  itemBuffs: 
+  itemIcon: {fileID: -335088683, guid: 829ee331f8d35ef43949204549e4034a, type: 3}
   maxCapacity: 3
-  glassSprite: {fileID: 10901, guid: 0000000000000000f000000000000000, type: 0}
