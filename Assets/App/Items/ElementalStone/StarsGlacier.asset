@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Stars Glacier
   itemIcon: {fileID: 682336617710350253, guid: 1bbd68160f33e9542b2e1830b78a5f10, type: 3}
   category: 2
-  sweetness: 0
+  sweetness: 3
   bitterness: 0
-  temperature: 0
+  temperature: -3
   itemBuffs: 

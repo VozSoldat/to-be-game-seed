@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Sky Crystal
   itemIcon: {fileID: -3452208812434955944, guid: 1bbd68160f33e9542b2e1830b78a5f10, type: 3}
   category: 2
-  sweetness: 0
+  sweetness: 2
   bitterness: 0
-  temperature: 0
+  temperature: -3
   itemBuffs: 
