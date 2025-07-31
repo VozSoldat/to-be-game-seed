@@ -1,19 +1,10 @@
 fileFormatVersion: 2
-guid: cca3123c7f5f2f74d83b20c94f7723bc
+guid: 829ee331f8d35ef43949204549e4034a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2880734798192188640
-    second: Potion_0
-  - first:
-      213: -5586807866896597309
-    second: Potion_1
-  - first:
-      213: -6306282405663924564
-    second: Potion_2
-  - first:
-      213: 3643514920608578656
-    second: Potion_3
+      213: -742735375742327899
+    second: cup_icon-Sheet_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -122,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: LacrimaLux
+      name: cup_icon-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
@@ -130,21 +121,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 023e5adb6f29508d0800000000000000
-      internalID: -2880734798192188640
+      spriteID: 5a323c66c1641b5f0800000000000000
+      internalID: -742735375742327899
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: NectarEssence
+      name: cup_icon-Sheet_1
       rect:
         serializedVersion: 2
         x: 32
@@ -152,21 +143,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3ce354168dba772b0800000000000000
-      internalID: -5586807866896597309
+      spriteID: 1c1bd39f38362b94d96c45a5ab763dfa
+      internalID: -335088683
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DeadSlime
+      name: cup_icon-Sheet_2
       rect:
         serializedVersion: 2
         x: 64
@@ -174,21 +165,21 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cae1b1d60959b78a0800000000000000
-      internalID: -6306282405663924564
+      spriteID: 5ba5945691fec4642afc6fb08fb58527
+      internalID: 387504346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IvoryGlow
+      name: cup_icon-Sheet_3
       rect:
         serializedVersion: 2
         x: 96
@@ -196,15 +187,59 @@ TextureImporter:
         width: 32
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 06cb5b0248d509230800000000000000
-      internalID: 3643514920608578656
+      spriteID: ede029ebdb872fc438b959f7cd8a3268
+      internalID: 1625027408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cup_icon-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3eca3618897ef34eb6fb074767abf8d
+      internalID: -1894752027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cup_icon-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5636e861d56976b40a2893fed7824ad6
+      internalID: 971075585
       vertices: []
       indices: 
       edges: []
@@ -213,7 +248,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 2d8cfaba2be31944cb260fc993d3d6af
+    spriteID: 8729590d8400a0745a933e57fe4444ab
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +258,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      DeadSlime: -6306282405663924564
-      IvoryGlow: 3643514920608578656
-      LacrimaLux: -2880734798192188640
-      NectarEssence: -5586807866896597309
+      cup_icon-Sheet_0: -742735375742327899
+      cup_icon-Sheet_1: -335088683
+      cup_icon-Sheet_2: 387504346
+      cup_icon-Sheet_3: 1625027408
+      cup_icon-Sheet_4: -1894752027
+      cup_icon-Sheet_5: 971075585
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -13,11 +13,5 @@ MonoBehaviour:
   m_Name: Medium
   m_EditorClassIdentifier: 
   itemName: Medium
-  itemIcon: {fileID: -5177219061741429869, guid: b21a5b92b4cc7144c9feede069a10ff6, type: 3}
-  category: 0
-  sweetness: 0
-  bitterness: 0
-  temperature: 0
-  itemBuffs: 
+  itemIcon: {fileID: 1625027408, guid: 829ee331f8d35ef43949204549e4034a, type: 3}
   maxCapacity: 4
-  glassSprite: {fileID: -5177219061741429869, guid: b21a5b92b4cc7144c9feede069a10ff6, type: 3}
