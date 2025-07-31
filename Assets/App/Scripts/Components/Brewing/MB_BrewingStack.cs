@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class MB_BrewingStack : MonoBehaviour
 {
-    public Stack<ItemData> Pours { get; private set; }
+    public Stack<ItemData>  Pours { get; private set; }
 
     [SerializeField] private int maxPour = 10;
     [SerializeField] private object StackInformation;
@@ -83,6 +83,7 @@ public class MB_BrewingStack : MonoBehaviour
     public void ResetPours()
     {
         Pours.Clear();
+        isMagicItemPoured = false;
     }
 
     public float TotalSweetness
