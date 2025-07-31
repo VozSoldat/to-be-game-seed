@@ -37,7 +37,7 @@ namespace StateMachines.ItemListStateMachine
             }
         }
 
-        public void TransitionToState(ItemListStateEnum newState)
+        public override void TransitionToState(ItemListStateEnum newState)
         {   
             base.TransitionToState(newState);
         }

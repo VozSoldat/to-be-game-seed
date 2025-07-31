@@ -45,7 +45,7 @@ namespace StateMachines.ItemListStateMachine
             // Try to get glasses from GlassListUI first
             if (glassListUI == null)
             {
-                glassListUI = Object.FindObjectOfType<GlassListUI>();
+                glassListUI = Object.FindAnyObjectByType<GlassListUI>();
             }
 
             if (glassListUI != null && glassListUI.availableGlasses != null && glassListUI.availableGlasses.Count > 0)
@@ -75,7 +75,7 @@ namespace StateMachines.ItemListStateMachine
         {
             if (glassListUI == null)
             {
-                glassListUI = Object.FindObjectOfType<GlassListUI>();
+                glassListUI = Object.FindAnyObjectByType<GlassListUI>();
             }
 
             if (glassListUI != null)

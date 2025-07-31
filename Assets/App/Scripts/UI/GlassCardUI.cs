@@ -14,9 +14,9 @@ public class GlassCardUI : MonoBehaviour, IPointerClickHandler
 
     private void Start()
     {
-        brewingStack = FindObjectOfType<MB_BrewingStack>();
+        brewingStack = FindAnyObjectByType<MB_BrewingStack>();
         Debug.Log($"BrewingStack found: {brewingStack != null}");
-        dropTarget = FindObjectOfType<DropTarget>();
+        dropTarget = FindAnyObjectByType<DropTarget>();
         Debug.Log($"DropTarget found: {dropTarget != null}");
     }
 

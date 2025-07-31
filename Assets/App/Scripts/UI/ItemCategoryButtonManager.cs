@@ -23,7 +23,7 @@ public class ItemCategoryButtonManager : MonoBehaviour
     void Start()
     {
         if (stateContext == null)
-            stateContext = FindObjectOfType<MB_ItemListStateContext>();
+            stateContext = FindAnyObjectByType<MB_ItemListStateContext>();
 
         SetupButtons();
         
