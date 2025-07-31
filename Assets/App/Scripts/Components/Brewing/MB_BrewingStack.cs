@@ -8,6 +8,8 @@ public class MB_BrewingStack : MonoBehaviour
     [SerializeField] private int maxPour = 10;
     [SerializeField] private object StackInformation;
 
+    private bool isMagicItemPoured = false;
+
     void Start()
     {
         Pours = new Stack<ItemData>(maxPour);
@@ -21,7 +23,7 @@ public class MB_BrewingStack : MonoBehaviour
             var removed = Pours.Pop();
             Debug.Log($"Removed {removed.itemName} due to glass size change.");
         }
-        
+
         Debug.Log($"Glass size changed. New max capacity: {maxPour}");
     }
 
@@ -40,22 +42,34 @@ public class MB_BrewingStack : MonoBehaviour
             return;
         }
 
+        if (isMagicItemPoured)
+        {
+            Debug.LogWarning($"Cannot add more ingredient after a magic item has been poured.");
+            return;
+        }
+
+        if (item.category == ItemCategory.MagicItem)
+        {
+            isMagicItemPoured = true;
+            Debug.Log($"Magic item poured: {item.itemName}");
+        }
+
         Pours.Push(item);
         Debug.Log($"Added {item.itemName} to the brewing stack.");
 
         // logging every stack
-        Debug.Log("Current brewing stack:");
+        // Debug.Log("Current brewing stack:");
         foreach (var pour in Pours)
         {
             Debug.Log($"- {pour.itemName}");
         }
         // log the total sweetness, bitterness, and temperature
-        Debug.Log($"Total Sweetness: {TotalSweetness}");
-        Debug.Log($"Total Bitterness: {TotalBitterness}");
-        Debug.Log($"Total Temperature: {TotalTemperature}");
+        // Debug.Log($"Total Sweetness: {TotalSweetness}");
+        // Debug.Log($"Total Bitterness: {TotalBitterness}");
+        // Debug.Log($"Total Temperature: {TotalTemperature}");
 
         // update text on the scene
-       
+
         if (StackInformation is MB_ShowStatUI statUI)
         {
             statUI.Update();

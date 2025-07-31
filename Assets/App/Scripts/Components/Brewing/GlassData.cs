@@ -8,15 +8,11 @@ public class GlassOption
     public int capacity;
 }
 
-// [JANGAN DIUBAH, NANTI AKU BENERIN] 
-
 [CreateAssetMenu(fileName = "New Glass", menuName = "Items/Glass")]
-public class GlassData : ItemData
+public class GlassData : ScriptableObject
 {
+    public string itemName;
+    public Sprite itemIcon;
     public int maxCapacity;
-    public Sprite glassSprite;
-    private void OnValidate()
-    {
-        category = ItemCategory.Glass;
-    }
+
 }

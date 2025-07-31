@@ -58,14 +58,6 @@ namespace StateMachines.ItemListStateMachine
                 // Fallback to Resources if GlassListUI doesn't have any
                 GlassData[] allGlasses = Resources.LoadAll<GlassData>("Glasses");
                 Debug.Log($"Found {allGlasses.Length} glasses in Resources/Glasses folder");
-
-                foreach (var glass in allGlasses)
-                {
-                    if (glass.category == ItemCategory.Glass)
-                    {
-                        defaultGlasses.Add(glass);
-                    }
-                }
             }
 
             Debug.Log($"Total glasses loaded: {defaultGlasses.Count}");
