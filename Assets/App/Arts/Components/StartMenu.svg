@@ -1,0 +1,47 @@
+<svg width="1920" height="1080" viewBox="0 0 1920 1080" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_8_2)">
+<rect width="1920" height="1080" fill="url(#paint0_linear_8_2)"/>
+<path d="M582 552V544H590V552H582Z" fill="white" fill-opacity="0.5"/>
+<path d="M184 117V109H192V117H184Z" fill="white" fill-opacity="0.5"/>
+<path d="M1220 717V709H1228V717H1220Z" fill="white" fill-opacity="0.5"/>
+<path d="M1382 264V256H1390V264H1382Z" fill="white" fill-opacity="0.5"/>
+<path d="M1678 151V143H1686V151H1678Z" fill="white" fill-opacity="0.5"/>
+<path d="M1575 812V804H1583V812H1575Z" fill="white" fill-opacity="0.5"/>
+<path d="M1455 487V479H1463V487H1455Z" fill="white" fill-opacity="0.5"/>
+<path d="M1335 162V154H1343V162H1335Z" fill="white" fill-opacity="0.5"/>
+<path d="M531 202V194H539V202H531Z" fill="white" fill-opacity="0.5"/>
+<path d="M134 984V976H142V984H134Z" fill="white" fill-opacity="0.5"/>
+<path d="M368 756V748H376V756H368Z" fill="white" fill-opacity="0.5"/>
+<path d="M118 336V328H126V336H118Z" fill="white" fill-opacity="0.5"/>
+<path d="M898 536V528H906V536H898Z" fill="white" fill-opacity="0.5"/>
+<path d="M515 971V963H523V971H515Z" fill="white" fill-opacity="0.5"/>
+<path d="M1389 987V979H1397V987H1389Z" fill="white" fill-opacity="0.5"/>
+<path d="M1761 902V894H1769V902H1761Z" fill="white" fill-opacity="0.5"/>
+<path d="M716 90V82H724V90H716Z" fill="white" fill-opacity="0.5"/>
+<path d="M1270 568V560H1278V568H1270Z" fill="white" fill-opacity="0.5"/>
+<path d="M660 357V349H668V357H660Z" fill="white" fill-opacity="0.5"/>
+<path d="M82 175V167H90V175H82Z" fill="white" fill-opacity="0.5"/>
+<path d="M118 701V693H126V701H118Z" fill="white" fill-opacity="0.5"/>
+<path d="M846 789V781H854V789H846Z" fill="white" fill-opacity="0.5"/>
+<path d="M1017 918V910H1025V918H1017Z" fill="white" fill-opacity="0.5"/>
+<path d="M1188 1047V1039H1196V1047H1188Z" fill="white" fill-opacity="0.5"/>
+<path d="M930 287V279H938V287H930Z" fill="white" fill-opacity="0.5"/>
+<path d="M1156 215V207H1164V215H1156Z" fill="white" fill-opacity="0.5"/>
+<path d="M1471 716V708H1479V716H1471Z" fill="white" fill-opacity="0.5"/>
+<path d="M1646 664V656H1654V664H1646Z" fill="white" fill-opacity="0.5"/>
+<path d="M1821 612V604H1829V612H1821Z" fill="white" fill-opacity="0.5"/>
+<path d="M1507 99V91H1515V99H1507Z" fill="white" fill-opacity="0.5"/>
+<path d="M732 661V653H740V661H732Z" fill="white" fill-opacity="0.5"/>
+<path d="M1729 440V432H1737V440H1729Z" fill="white" fill-opacity="0.5"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_8_2" x1="1920" y1="1080" x2="1.16229e-05" y2="-2.06629e-05" gradientUnits="userSpaceOnUse">
+<stop stop-color="#1E2939"/>
+<stop offset="0.5" stop-color="#101828"/>
+<stop offset="1" stop-color="#030712"/>
+</linearGradient>
+<clipPath id="clip0_8_2">
+<rect width="1920" height="1080" fill="white"/>
+</clipPath>
+</defs>
+</svg>
