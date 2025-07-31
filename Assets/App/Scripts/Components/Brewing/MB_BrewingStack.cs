@@ -6,12 +6,28 @@ public class MB_BrewingStack : MonoBehaviour
     public Stack<ItemData> Pours { get; private set; }
 
     [SerializeField] private int maxPour = 10;
-
     [SerializeField] private object StackInformation;
 
     void Start()
     {
         Pours = new Stack<ItemData>(maxPour);
+    }
+
+    public void SetMaxPour(int newMax)
+    {
+        maxPour = newMax;
+        while (Pours != null && Pours.Count > maxPour)
+        {
+            var removed = Pours.Pop();
+            Debug.Log($"Removed {removed.itemName} due to glass size change.");
+        }
+        
+        Debug.Log($"Glass size changed. New max capacity: {maxPour}");
+    }
+
+    public int GetMaxPour()
+    {
+        return maxPour;
     }
 
     public void AddPour(ItemData item)
