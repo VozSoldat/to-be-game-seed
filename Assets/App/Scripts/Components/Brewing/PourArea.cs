@@ -6,6 +6,14 @@ public class DropTarget : MonoBehaviour, IDropHandler
 {
     public ItemData itemData;
     public MB_BrewingStack brewingStack;
+    public Image glassImage;
+    private void Start()
+    {
+        if (glassImage == null)
+        {
+            glassImage = GetComponent<Image>();
+        }
+    }
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -29,4 +37,11 @@ public class DropTarget : MonoBehaviour, IDropHandler
         }
     }
 
+    public void SetGlassSprite(Sprite glassSprite)
+    {
+        if (glassImage != null)
+        {
+            glassImage.sprite = glassSprite;
+        }
+    }
 }
