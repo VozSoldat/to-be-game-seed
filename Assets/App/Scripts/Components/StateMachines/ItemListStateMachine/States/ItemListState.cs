@@ -16,6 +16,7 @@ namespace StateMachines.ItemListStateMachine
         {
             Debug.Log($"Entering {category} State");
             context.UpdateItemList(category);
+            
         }
 
         public override void UpdateExecute(MB_ItemListStateContext context)

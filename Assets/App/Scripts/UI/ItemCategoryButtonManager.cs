@@ -23,7 +23,7 @@ public class ItemCategoryButtonManager : MonoBehaviour
     void Start()
     {
         if (stateContext == null)
-            stateContext = FindObjectOfType<MB_ItemListStateContext>();
+            stateContext = FindAnyObjectByType<MB_ItemListStateContext>();
 
         SetupButtons();
         
@@ -47,14 +47,20 @@ public class ItemCategoryButtonManager : MonoBehaviour
         
         if (magicItemButton != null)
             magicItemButton.onClick.AddListener(() => OnCategoryButtonClicked(ItemListStateEnum.MagicItem, magicItemButton));
+        Debug.Log("Category buttons setup complete");
     }
 
     void OnCategoryButtonClicked(ItemListStateEnum state, Button clickedButton)
     {
         if (stateContext != null)
         {
+            Debug.Log($"Transitioning to {state} state");
             stateContext.TransitionToState(state);
             SetSelectedButton(clickedButton);
+        }
+        else
+        {
+            Debug.LogError("State context is null - cannot transition states!");
         }
     }
 

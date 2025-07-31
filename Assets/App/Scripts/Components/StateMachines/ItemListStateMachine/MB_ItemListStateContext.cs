@@ -37,6 +37,11 @@ namespace StateMachines.ItemListStateMachine
             }
         }
 
+        public override void TransitionToState(ItemListStateEnum newState)
+        {   
+            base.TransitionToState(newState);
+        }
+        
         // Public methods to transition to specific states
         public void ShowGlassItems() => TransitionToState(ItemListStateEnum.Glass);
         public void ShowCoffeeItems() => TransitionToState(ItemListStateEnum.Coffee);
