@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class StatBar : MonoBehaviour
+public class MB_StatBar : MonoBehaviour
 {
     public float Point, MaxPoint, Width, Height;
     [SerializeField]
@@ -8,7 +8,7 @@ public class StatBar : MonoBehaviour
     void Update()
     {
         
-        if (Point <= 5)
+        if (Point <= MaxPoint && Point >= 0)
         {
             SetPoint(Point);
         }
