@@ -41,7 +41,7 @@ public class GlassCardUI : MonoBehaviour, IPointerClickHandler
             
             if (dropTarget != null && dropTarget.GetComponent<Image>() != null)
             {
-                dropTarget.GetComponent<Image>().sprite = glassData.glassSprite;
+                dropTarget.GetComponent<Image>().sprite = glassData.itemIcon;
             }
         }
     }
