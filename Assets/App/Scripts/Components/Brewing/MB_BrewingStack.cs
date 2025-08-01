@@ -91,6 +91,7 @@ public class MB_BrewingStack : MonoBehaviour
         get
         {
             float total = 0f;
+            if (Pours == null) return total;
             foreach (var item in Pours)
             {
                 total += item.sweetness;
@@ -104,6 +105,7 @@ public class MB_BrewingStack : MonoBehaviour
         get
         {
             float total = 0f;
+            if (Pours == null) return total;
             foreach (var item in Pours)
             {
                 total += item.bitterness;
@@ -117,6 +119,7 @@ public class MB_BrewingStack : MonoBehaviour
         get
         {
             float total = 0f;
+            if (Pours == null) return total;
             foreach (var item in Pours)
             {
                 total += item.temperature;
