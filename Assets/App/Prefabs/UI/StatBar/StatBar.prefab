@@ -92,12 +92,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxValue: 10
   currentValue: 0
-  filledLeft: {fileID: -1333664026602934174, guid: dc039d5249760d54e8b44ae2f8f1eb40, type: 3}
-  filledCenter: {fileID: 213453989, guid: dc039d5249760d54e8b44ae2f8f1eb40, type: 3}
-  filledRight: {fileID: -1002269944, guid: dc039d5249760d54e8b44ae2f8f1eb40, type: 3}
-  emptyLeft: {fileID: 5567832508373365553, guid: 34f1ec0d6c7471249aaaaec8620be6e9, type: 3}
-  emptyCenter: {fileID: -1920220954, guid: 34f1ec0d6c7471249aaaaec8620be6e9, type: 3}
-  emptyRight: {fileID: -1518294326, guid: 34f1ec0d6c7471249aaaaec8620be6e9, type: 3}
+  filledLeft: {fileID: -947140618, guid: 6dedfcb1bc5eca54a9028bf492836af1, type: 3}
+  filledCenter: {fileID: 1189855773, guid: 6dedfcb1bc5eca54a9028bf492836af1, type: 3}
+  filledRight: {fileID: 1116032019, guid: 6dedfcb1bc5eca54a9028bf492836af1, type: 3}
+  emptyLeft: {fileID: 5156776694448688124, guid: 6dedfcb1bc5eca54a9028bf492836af1, type: 3}
+  emptyCenter: {fileID: 2978572862657520574, guid: 6dedfcb1bc5eca54a9028bf492836af1, type: 3}
+  emptyRight: {fileID: -841593047, guid: 6dedfcb1bc5eca54a9028bf492836af1, type: 3}
   filledBarRoot: {fileID: 1360181386620489270}
   emptyBarRoot: {fileID: 921821432531687310}
   imagePrefab: {fileID: 1188753594065452675, guid: a260056819ac31446bd215d5bb49f2e7, type: 3}

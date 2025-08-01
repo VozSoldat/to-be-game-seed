@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: dc039d5249760d54e8b44ae2f8f1eb40
+guid: 1d51c5af2da72f4438470421916a92cf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1333664026602934174
-    second: BarIsi_0
+      213: 2468925625687820037
+    second: BarIsi 1_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -47,7 +47,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -96,11 +96,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BarIsi_0
+      name: BarIsi 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,14 +128,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2607d9442afdd7de0800000000000000
-      internalID: -1333664026602934174
+      spriteID: 5074bff86c2634220800000000000000
+      internalID: 2468925625687820037
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarIsi_1
+      name: BarIsi 1_1
       rect:
         serializedVersion: 2
         x: 16
@@ -137,14 +150,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5e7d78c56a31d649af73c6ae08acc1e
-      internalID: 213453989
+      spriteID: eb8ae44a3e0753a4cae7937b888978e1
+      internalID: -1563781183
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarIsi_2
+      name: BarIsi 1_2
       rect:
         serializedVersion: 2
         x: 32
@@ -159,8 +172,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70325e0d0f35f0842b72def21f87e15b
-      internalID: -1002269944
+      spriteID: 350f976eecb61104899c98ded29ef8cb
+      internalID: 1285209268
       vertices: []
       indices: 
       edges: []
@@ -169,7 +182,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 627670e1724b148478a94002ba7e99e2
+    spriteID: 6ddaa856e82ee4f4f80962fd16c6c78a
     internalID: 0
     vertices: []
     indices: 
@@ -179,9 +192,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BarIsi_0: -1333664026602934174
-      BarIsi_1: 213453989
-      BarIsi_2: -1002269944
+      BarIsi 1_0: 2468925625687820037
+      BarIsi 1_1: -1563781183
+      BarIsi 1_2: 1285209268
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
