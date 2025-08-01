@@ -5,7 +5,7 @@ public class MB_BrewingStack : MonoBehaviour
 {
     public Stack<ItemData>  Pours { get; private set; }
 
-    [SerializeField] private int maxPour = -1;
+    [SerializeField] private int maxPour = 0;
     [SerializeField] private MB_ShowStatUI   StackInformation;
 
     private bool isMagicItemPoured = false;
@@ -95,6 +95,7 @@ public class MB_BrewingStack : MonoBehaviour
             foreach (var item in Pours)
             {
                 total += item.sweetness;
+                total = Mathf.Clamp(total, 0, 5);
             }
             return total;
         }
@@ -109,6 +110,7 @@ public class MB_BrewingStack : MonoBehaviour
             foreach (var item in Pours)
             {
                 total += item.bitterness;
+                total = Mathf.Clamp(total, 0, 5);
             }
             return total;
         }
@@ -123,6 +125,7 @@ public class MB_BrewingStack : MonoBehaviour
             foreach (var item in Pours)
             {
                 total += item.temperature;
+                total = Mathf.Clamp(total, 0, 5);
             }
             return total;
         }
