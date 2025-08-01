@@ -5,6 +5,7 @@ public class PindahScene : MonoBehaviour
 {
     // [SerializeField] Scene targetscene;
     [SerializeField] Timer timer;
+    [SerializeField] string targetScene;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -13,7 +14,12 @@ public class PindahScene : MonoBehaviour
     void OnEnable()
     {
         timer.OnTimerOutHandler += GantiScene;
-        
+
+    }
+
+    void OnDisable()
+    {
+        timer.OnTimerOutHandler -= GantiScene;
     }
 
     // Update is called once per frame
@@ -24,6 +30,6 @@ public class PindahScene : MonoBehaviour
 
     public void GantiScene()
     {
-        SceneManager.LoadScene("Tes");
+        SceneManager.LoadScene(targetScene);
     }
 }
