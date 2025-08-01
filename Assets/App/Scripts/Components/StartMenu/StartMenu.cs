@@ -9,18 +9,12 @@ public class StartMenu : MonoBehaviour
         SceneManager.LoadScene("BrewingDemo");
     }
 
-    public void Settings()
-    {
-        Debug.Log("Settings option clicked.");
-        SceneManager.LoadScene("Settings");
-    }
-
     public void ExitGame()
     {
         Application.Quit();
 
-        #if UNITY_EDITOR
-            UnityEditor.EditorApplication.isPlaying = false;
-        #endif
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 }
