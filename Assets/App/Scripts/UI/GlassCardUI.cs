@@ -36,7 +36,7 @@ public class GlassCardUI : MonoBehaviour, IPointerClickHandler
     {
         if (brewingStack != null && glassData != null)
         {
-            if (brewingStack.GetMaxPour() == -1)
+            if (brewingStack.GetMaxPour() == 0)
             {
 
                 brewingStack.SetMaxPour(glassData.maxCapacity);
