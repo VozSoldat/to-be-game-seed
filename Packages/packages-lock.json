@@ -1,5 +1,13 @@
 {
   "dependencies": {
+    "com.unify.unified-universal-blur": {
+      "version": "file:C:/Users/Olyvian/Downloads/Unified-Universal-Blur-0.7.1/Unified-Universal-Blur-0.7.1",
+      "depth": 0,
+      "source": "local",
+      "dependencies": {
+        "com.unity.render-pipelines.universal": "17.0.3"
+      }
+    },
     "com.unity.2d.animation": {
       "version": "10.1.4",
       "depth": 1,
