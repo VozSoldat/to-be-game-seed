@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Tauvera
   m_EditorClassIdentifier: 
   itemName: Tauvera
-  itemIcon: {fileID: -4291327628950587921, guid: cc4c472b461e2e548bf97f3348430ac9, type: 3}
+  itemIcon: {fileID: 5014851497845726018, guid: f3068fb5d1c08131ca375d4b32705ad5, type: 3}
   category: 3
   sweetness: 2
   bitterness: -2

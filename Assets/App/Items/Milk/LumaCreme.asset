@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LumaCreme
   m_EditorClassIdentifier: 
   itemName: LumaCreme
-  itemIcon: {fileID: -8499008938236420472, guid: cc4c472b461e2e548bf97f3348430ac9, type: 3}
+  itemIcon: {fileID: 385362139624488196, guid: 8e61f6c880ad70c9686d18b597d2c96f, type: 3}
   category: 3
   sweetness: 1
   bitterness: -2

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: StarsGlacier
   m_EditorClassIdentifier: 
   itemName: Stars Glacier
-  itemIcon: {fileID: 682336617710350253, guid: 1bbd68160f33e9542b2e1830b78a5f10, type: 3}
+  itemIcon: {fileID: 1564155809889596923, guid: d2baf994283cba9f78bed8819216223d, type: 3}
   category: 2
   sweetness: 0
   bitterness: 0
