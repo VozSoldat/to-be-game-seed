@@ -22,27 +22,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3029896715935277183, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3029896715935277183, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3029896715935277183, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3029896715935277183, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3029896715935277183, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 34
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3029896715935277183, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 34
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3029896715935277183, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
       propertyPath: m_LocalPosition.x
@@ -62,15 +62,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3029896715935277183, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3029896715935277183, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3029896715935277183, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 3029896715935277183, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -108,6 +108,30 @@ PrefabInstance:
       propertyPath: m_SpriteState.m_HighlightedSprite
       value: 
       objectReference: {fileID: 2883663352950817148, guid: 2f85abd1608e3b64f864ec4c82e15a06, type: 3}
+    - target: {fileID: 5526578869183461826, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526578869183461826, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526578869183461826, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526578869183461826, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ExitMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526578869183461826, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MB_MenuExitUI, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5526578869183461826, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 7410110322178219940, guid: 3b118f2ed93aaf249b91a5b79411aa21, type: 3}
       propertyPath: m_Name
       value: silang coklat
