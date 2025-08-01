@@ -183,6 +183,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPour: -1
+  StackInformation: {fileID: 1075977209}
 --- !u!4 &80544476
 Transform:
   m_ObjectHideFlags: 0
@@ -2385,6 +2386,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 9196536531025126109, guid: 7a85c2de2b5df1a44b911d128a22da64, type: 3}
   m_PrefabInstance: {fileID: 969188538}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1075977209 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 811533612076893009, guid: 7a85c2de2b5df1a44b911d128a22da64, type: 3}
+  m_PrefabInstance: {fileID: 969188538}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0e7e8d578c0d845bb10b3d92c7815a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1204738552
 GameObject:
   m_ObjectHideFlags: 0
