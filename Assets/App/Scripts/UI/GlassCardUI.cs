@@ -36,12 +36,20 @@ public class GlassCardUI : MonoBehaviour, IPointerClickHandler
     {
         if (brewingStack != null && glassData != null)
         {
-            brewingStack.SetMaxPour(glassData.maxCapacity);
-            Debug.Log($"Selected {glassData.itemName} with capacity {glassData.maxCapacity}");
-            
-            if (dropTarget != null && dropTarget.GetComponent<Image>() != null)
+            if (brewingStack.GetMaxPour() == 0)
             {
-                dropTarget.GetComponent<Image>().sprite = glassData.itemIcon;
+
+                brewingStack.SetMaxPour(glassData.maxCapacity);
+                Debug.Log($"Selected {glassData.itemName} with capacity {glassData.maxCapacity}");
+
+                if (dropTarget != null && dropTarget.GetComponent<Image>() != null)
+                {
+                    dropTarget.GetComponent<Image>().sprite = glassData.itemIcon;
+                }
+            }
+            else
+            {
+                Debug.LogWarning($"Cannot select {glassData.itemName}. Glass already selected!.");
             }
         }
     }

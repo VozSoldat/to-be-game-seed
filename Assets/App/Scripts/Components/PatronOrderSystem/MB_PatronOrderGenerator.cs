@@ -1,5 +1,13 @@
+using System;
 using System.Linq;
 using UnityEngine;
+
+[Serializable]
+public class WrappStat
+{
+    public int min;
+    public int max;
+}
 
 public class MB_PatronOrderGenerator : MonoBehaviour
 {
@@ -8,6 +16,11 @@ public class MB_PatronOrderGenerator : MonoBehaviour
     [SerializeField] ItemData[] _operandItemDataset;
     [SerializeField] int _combinationSize = 2;
     [SerializeField] CalculatorType _calculatorType;
+
+    [Header("ItemData Stat Clamping")]
+    [SerializeField] WrappStat _sweetnessClamp = new WrappStat { min = 0, max = 5 };
+    [SerializeField] WrappStat _bitternessClamp = new WrappStat { min = 0, max = 5 };
+    [SerializeField] WrappStat _temperatureClamp = new WrappStat { min = 0, max = 5 };
 
 
     int[][] ItemDataToArrayOfArray(ItemData[] items)
@@ -24,9 +37,9 @@ public class MB_PatronOrderGenerator : MonoBehaviour
         return arrays.Select<int[], ItemData>(array =>
         {
             var itemData = ScriptableObject.CreateInstance<ItemData>();
-            itemData.sweetness = array[0];
-            itemData.bitterness = array[1];
-            itemData.temperature = array[2];
+            itemData.sweetness = Math.Clamp(array[0], _sweetnessClamp.min, _sweetnessClamp.max); 
+            itemData.bitterness = Math.Clamp(array[1], _bitternessClamp.min, _bitternessClamp.max);
+            itemData.temperature = Math.Clamp(array[2], _temperatureClamp.min, _temperatureClamp.max);
             return itemData;
         })
         .ToArray();
