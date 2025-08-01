@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c3061256cb43c04485160cc2f184b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPour: 10
+  maxPour: -1
 --- !u!4 &80544476
 Transform:
   m_ObjectHideFlags: 0
@@ -707,7 +707,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 770374569}
   m_HandleRect: {fileID: 770374568}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
