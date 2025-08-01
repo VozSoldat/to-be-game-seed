@@ -6,7 +6,7 @@ public class MB_BrewingStack : MonoBehaviour
     public Stack<ItemData>  Pours { get; private set; }
 
     [SerializeField] private int maxPour = -1;
-    [SerializeField] private object StackInformation;
+    [SerializeField] private MB_ShowStatUI   StackInformation;
 
     private bool isMagicItemPoured = false;
 
