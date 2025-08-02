@@ -14,7 +14,7 @@ namespace StateMachines.ItemListStateMachine
 
         public override void Enter(MB_ItemListStateContext context)
         {
-            Debug.Log($"Entering {category} State");
+            // Debug.Log($"Entering {category} State");
             context.UpdateItemList(category);
             
         }
@@ -26,7 +26,7 @@ namespace StateMachines.ItemListStateMachine
 
         public override void Exit(MB_ItemListStateContext context)
         {
-            Debug.Log($"Exiting {category} State");
+            // Debug.Log($"Exiting {category} State");
         }
     }
 }

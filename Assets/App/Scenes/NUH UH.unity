@@ -184,6 +184,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxPour: -1
+  StackInformation: {fileID: 0}
 --- !u!4 &80544476
 Transform:
   m_ObjectHideFlags: 0
@@ -472,7 +473,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patronOrderGenerator: {fileID: 308011331}
   brewingStack: {fileID: 80544475}
+  showScoreSubmit: {fileID: 0}
   order: {fileID: 0}
+  orderSourceItems: []
 --- !u!4 &230396391
 Transform:
   m_ObjectHideFlags: 0
@@ -708,7 +711,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 770374569}
   m_HandleRect: {fileID: 770374568}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -796,6 +799,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 644d442553bdbae4d9ad5c62f226d927, type: 2}
   _combinationSize: 3
   _calculatorType: 0
+  _sweetnessClamp:
+    min: 0
+    max: 5
+  _bitternessClamp:
+    min: 0
+    max: 5
+  _temperatureClamp:
+    min: 0
+    max: 5
 --- !u!4 &308011332
 Transform:
   m_ObjectHideFlags: 0
@@ -1089,17 +1101,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8077488572174317580, guid: c51f54c9ef2b2e3458b01f48b2f0aba7, type: 3}
   m_PrefabInstance: {fileID: 763653387}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &586481574 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4572761491670484933, guid: c51f54c9ef2b2e3458b01f48b2f0aba7, type: 3}
-  m_PrefabInstance: {fileID: 763653387}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf89f4ab28fd87a4b83aac254e60b818, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &608369730
 GameObject:
   m_ObjectHideFlags: 0
@@ -1183,7 +1184,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1866403743}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999998
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -3904,7 +3905,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 586481574}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: StatBar, Assembly-CSharp
         m_MethodName: GenerateBar
         m_Mode: 1

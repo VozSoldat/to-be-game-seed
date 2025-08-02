@@ -3,10 +3,10 @@ using UnityEngine;
 
 public class MB_BrewingStack : MonoBehaviour
 {
-    public Stack<ItemData>  Pours { get; private set; }
+    public Stack<ItemData> Pours { get; private set; }
 
     [SerializeField] private int maxPour = 0;
-    [SerializeField] private MB_ShowStatUI   StackInformation;
+    [SerializeField] private MB_ShowStatUI StackInformation;
 
     private bool isMagicItemPoured = false;
 
@@ -86,45 +86,48 @@ public class MB_BrewingStack : MonoBehaviour
         isMagicItemPoured = false;
     }
 
-    public float TotalSweetness
+    public int TotalSweetness
     {
         get
         {
-            float total = 0f;
+            int total = 0;
             if (Pours == null) return total;
-            foreach (var item in Pours)
+            ItemData[] StackPour = Pours.ToArray(); // dibuat array
+            for (int i = StackPour.Length - 1; i >= 0; i--) // dihitung dari belakang, ga tau kenapa kalau dari depan malah ga sesuai
             {
-                total += item.sweetness;
+                total += StackPour[i].sweetness;
                 total = Mathf.Clamp(total, 0, 5);
             }
             return total;
         }
     }
 
-    public float TotalBitterness
+    public int TotalBitterness
     {
         get
         {
-            float total = 0f;
+            int total = 0;
             if (Pours == null) return total;
-            foreach (var item in Pours)
+            ItemData[] StackPour = Pours.ToArray();
+            for (int i = StackPour.Length - 1; i >= 0; i--)
             {
-                total += item.bitterness;
+                total += StackPour[i].bitterness;
                 total = Mathf.Clamp(total, 0, 5);
             }
             return total;
         }
     }
 
-    public float TotalTemperature
+    public int TotalTemperature
     {
         get
         {
-            float total = 0f;
+            int total = 0;
             if (Pours == null) return total;
-            foreach (var item in Pours)
+            ItemData[] StackPour = Pours.ToArray();
+            for (int i = StackPour.Length - 1; i >= 0; i--)
             {
-                total += item.temperature;
+                total += StackPour[i].temperature;
                 total = Mathf.Clamp(total, 0, 5);
             }
             return total;
