@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: IvoryGlow
   m_EditorClassIdentifier: 
   itemName: Ivory Glow
-  itemIcon: {fileID: 3643514920608578656, guid: cca3123c7f5f2f74d83b20c94f7723bc, type: 3}
+  itemIcon: {fileID: 3643514920608578656, guid: b97364cc8a237545496893226cf5e77b, type: 3}
   category: 4
   sweetness: 0
   bitterness: 0
