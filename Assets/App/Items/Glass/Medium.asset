@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Medium
   m_EditorClassIdentifier: 
   itemName: Medium
-  itemIcon: {fileID: 1625027408, guid: 829ee331f8d35ef43949204549e4034a, type: 3}
+  itemIcon: {fileID: -315185836, guid: dc1e1845065a11b7a99eb54a97f83423, type: 3}
   maxCapacity: 4

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Large
   m_EditorClassIdentifier: 
   itemName: Large
-  itemIcon: {fileID: 971075585, guid: 829ee331f8d35ef43949204549e4034a, type: 3}
+  itemIcon: {fileID: 1777352550, guid: dc1e1845065a11b7a99eb54a97f83423, type: 3}
   maxCapacity: 5

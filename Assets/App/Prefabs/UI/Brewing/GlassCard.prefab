@@ -300,8 +300,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.15490723, y: 125.67406}
-  m_SizeDelta: {x: -12.490101, y: -328.68457}
+  m_AnchoredPosition: {x: 0, y: 33.883423}
+  m_SizeDelta: {x: 0, y: -242.6515}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7343768957926925253
 CanvasRenderer:
@@ -324,7 +324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.392}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -401,7 +401,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   iconImage: {fileID: 7159249939192636173}
   nameText: {fileID: 1420692015587784750}
-  selectButton: {fileID: 0}
 --- !u!1 &6815090990158344229
 GameObject:
   m_ObjectHideFlags: 0
