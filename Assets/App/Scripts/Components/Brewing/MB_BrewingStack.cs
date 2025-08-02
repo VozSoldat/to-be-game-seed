@@ -5,7 +5,7 @@ public class MB_BrewingStack : MonoBehaviour
 {
     public Stack<ItemData>  Pours { get; private set; }
 
-    [SerializeField] private int maxPour = -1;
+    [SerializeField] private int maxPour = 10;
     [SerializeField] private object StackInformation;
 
     private bool isMagicItemPoured = false;
@@ -91,7 +91,6 @@ public class MB_BrewingStack : MonoBehaviour
         get
         {
             float total = 0f;
-            if (Pours == null) return total;
             foreach (var item in Pours)
             {
                 total += item.sweetness;
@@ -105,7 +104,6 @@ public class MB_BrewingStack : MonoBehaviour
         get
         {
             float total = 0f;
-            if (Pours == null) return total;
             foreach (var item in Pours)
             {
                 total += item.bitterness;
@@ -119,7 +117,6 @@ public class MB_BrewingStack : MonoBehaviour
         get
         {
             float total = 0f;
-            if (Pours == null) return total;
             foreach (var item in Pours)
             {
                 total += item.temperature;

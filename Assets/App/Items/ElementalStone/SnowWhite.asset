@@ -15,7 +15,7 @@ MonoBehaviour:
   itemName: Snow White
   itemIcon: {fileID: 6957673144263918906, guid: d2baf994283cba9f78bed8819216223d, type: 3}
   category: 2
-  sweetness: 1
+  sweetness: 0
   bitterness: 0
-  temperature: -3
+  temperature: 0
   itemBuffs: 
