@@ -182,7 +182,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c3061256cb43c04485160cc2f184b72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxPour: -1
+  maxPour: 0
   StackInformation: {fileID: 1075977209}
 --- !u!4 &80544476
 Transform:
@@ -475,6 +475,7 @@ MonoBehaviour:
   brewingStack: {fileID: 80544475}
   showScoreSubmit: {fileID: 230396392}
   order: {fileID: 0}
+  orderSourceItems: []
 --- !u!4 &230396391
 Transform:
   m_ObjectHideFlags: 0
@@ -1090,7 +1091,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1866403743}
   m_Direction: 0
   m_Value: 0
-  m_Size: 0.99999994
+  m_Size: 0.9999998
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
