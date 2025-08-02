@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7205083899641968522}
   - component: {fileID: 3489508842336693375}
   m_Layer: 5
-  m_Name: StatBar
+  m_Name: Horizontal Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
