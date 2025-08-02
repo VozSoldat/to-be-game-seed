@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Velmora
   m_EditorClassIdentifier: 
   itemName: Velmora
-  itemIcon: {fileID: 6507773284634311481, guid: 03d64c5c179ef661384bc39089635dc7, type: 3}
+  itemIcon: {fileID: 5839419954647355667, guid: 8918f5b444b7a7cbab1f28c54d1516c1, type: 3}
   category: 3
   sweetness: 3
   bitterness: -1
