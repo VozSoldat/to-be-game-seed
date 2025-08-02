@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: dc039d5249760d54e8b44ae2f8f1eb40
+guid: 561fb22327db9e7489bb8a5a44174a1a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1333664026602934174
-    second: BarIsi_0
+      213: 5156776694448688124
+    second: bar_0
+  - first:
+      213: 2978572862657520574
+    second: bar_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -47,7 +50,7 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
@@ -96,11 +99,24 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BarIsi_0
+      name: bar_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,14 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 2607d9442afdd7de0800000000000000
-      internalID: -1333664026602934174
+      spriteID: cfb80a2f41d809740800000000000000
+      internalID: 5156776694448688124
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarIsi_1
+      name: bar_1
       rect:
         serializedVersion: 2
         x: 16
@@ -135,16 +151,16 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: f5e7d78c56a31d649af73c6ae08acc1e
-      internalID: 213453989
+      spriteID: eb3e158cc34065920800000000000000
+      internalID: 2978572862657520574
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BarIsi_2
+      name: bar_2
       rect:
         serializedVersion: 2
         x: 32
@@ -159,8 +175,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70325e0d0f35f0842b72def21f87e15b
-      internalID: -1002269944
+      spriteID: 9ef025f31c26b8c43a9e1679a2d0ee23
+      internalID: -378123439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a41823e9b360dd46a3c91a425bf69b1
+      internalID: 286418322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7daa0ef2fa060d94b8c4eb9e9ed1197b
+      internalID: 1922987802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: bar_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cb38f95636753a489565194a619e6d6
+      internalID: 1814274608
       vertices: []
       indices: 
       edges: []
@@ -169,7 +251,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 627670e1724b148478a94002ba7e99e2
+    spriteID: eb3b4c4e7f9a0184ea4e5688d7d73c3b
     internalID: 0
     vertices: []
     indices: 
@@ -179,9 +261,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      BarIsi_0: -1333664026602934174
-      BarIsi_1: 213453989
-      BarIsi_2: -1002269944
+      bar_0: 5156776694448688124
+      bar_1: 2978572862657520574
+      bar_2: -378123439
+      bar_3: 286418322
+      bar_4: 1922987802
+      bar_5: 1814274608
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
