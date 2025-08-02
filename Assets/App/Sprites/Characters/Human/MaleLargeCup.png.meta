@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-guid: 87b7dd73b8201f9c5a7f1fbd4976694a
+guid: 3a2a394b4a0cf6625aaf2605c472c88c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5156776694448688124
-    second: bar_0
+      213: -4269943649335447789
+    second: MaleLargeCup_0
   - first:
-      213: 2978572862657520574
-    second: bar_1
-========
-guid: 975661f4067cd1a47a51bbe4a246abcb
-TextureImporter:
-  internalIDToNameTable:
+      213: -151537636810085273
+    second: MaleLargeCup_1
   - first:
-      213: 7688679314300870848
-    second: NoButton_0
+      213: -7056749945808786401
+    second: MaleLargeCup_2
   - first:
-      213: 4400926762809503569
-    second: NoButton_1
+      213: 8571917262552468036
+    second: MaleLargeCup_3
   - first:
-      213: -995944346279391903
-    second: NoButton_2
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      213: 696347089233279398
+    second: MaleLargeCup_4
+  - first:
+      213: -730331785636516700
+    second: MaleLargeCup_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -93,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,34 +111,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-      name: bar_0
-========
-      name: NoButton_0
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      name: MaleLargeCup_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 22
-        width: 57
-        height: 22
+        x: 2
+        y: 3
+        width: 200
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,29 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-      spriteID: cfb80a2f41d809740800000000000000
-      internalID: 5156776694448688124
-========
-      spriteID: 0c02cc8991da3ba60800000000000000
-      internalID: 7688679314300870848
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      spriteID: 31fec62cfdc1eb4c0800000000000000
+      internalID: -4269943649335447789
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-      name: bar_1
-========
-      name: NoButton_1
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      name: MaleLargeCup_1
       rect:
         serializedVersion: 2
-        x: 67
-        y: 21
-        width: 59
-        height: 24
+        x: 207
+        y: 3
+        width: 200
+        height: 196
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,29 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-      spriteID: eb3e158cc34065920800000000000000
-      internalID: 2978572862657520574
-========
-      spriteID: 15f25cbd29b331d30800000000000000
-      internalID: 4400926762809503569
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      spriteID: 76c25db7251a5edf0800000000000000
+      internalID: -151537636810085273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-      name: bar_2
-========
-      name: NoButton_2
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      name: MaleLargeCup_2
       rect:
         serializedVersion: 2
-        x: 131
-        y: 21
-        width: 59
-        height: 23
+        x: 412
+        y: 12
+        width: 200
+        height: 187
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,79 +174,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-      spriteID: 9ef025f31c26b8c43a9e1679a2d0ee23
-      internalID: -378123439
+      spriteID: f1c6f430053611e90800000000000000
+      internalID: -7056749945808786401
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bar_3
+      name: MaleLargeCup_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
+        x: 617
+        y: 32
+        width: 200
+        height: 167
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3a41823e9b360dd46a3c91a425bf69b1
-      internalID: 286418322
+      spriteID: 44a8a76955195f670800000000000000
+      internalID: 8571917262552468036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bar_4
+      name: MaleLargeCup_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
+        x: 820
+        y: 31
+        width: 202
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7daa0ef2fa060d94b8c4eb9e9ed1197b
-      internalID: 1922987802
+      spriteID: 6a9702efcfbe9a900800000000000000
+      internalID: 696347089233279398
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bar_5
+      name: MaleLargeCup_5
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
+        x: 1025
+        y: 31
+        width: 202
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4cb38f95636753a489565194a619e6d6
-      internalID: 1814274608
-========
-      spriteID: 16d45ffc4e1bd22f0800000000000000
-      internalID: -995944346279391903
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      spriteID: 4ac65f44c175dd5f0800000000000000
+      internalID: -730331785636516700
       vertices: []
       indices: 
       edges: []
@@ -293,11 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-    spriteID: eb3b4c4e7f9a0184ea4e5688d7d73c3b
-========
     spriteID: 
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
     internalID: 0
     vertices: []
     indices: 
@@ -307,18 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-      bar_0: 5156776694448688124
-      bar_1: 2978572862657520574
-      bar_2: -378123439
-      bar_3: 286418322
-      bar_4: 1922987802
-      bar_5: 1814274608
-========
-      NoButton_0: 7688679314300870848
-      NoButton_1: 4400926762809503569
-      NoButton_2: -995944346279391903
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      MaleLargeCup_0: -4269943649335447789
+      MaleLargeCup_1: -151537636810085273
+      MaleLargeCup_2: -7056749945808786401
+      MaleLargeCup_3: 8571917262552468036
+      MaleLargeCup_4: 696347089233279398
+      MaleLargeCup_5: -730331785636516700
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

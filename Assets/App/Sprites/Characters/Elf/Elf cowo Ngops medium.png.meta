@@ -1,28 +1,34 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/barVertical.png.meta
-guid: 5cecc487d1e78e93a9ce6fd677c8b4a7
+guid: a42be3250ad20cd60bdeebb2b83716c8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4406963375767576199
-    second: barVertical_0
+      213: -9045168767513072730
+    second: Elf cowo Ngops medium_0
   - first:
-      213: 1786106014632523669
-    second: barVertical_1
-========
-guid: 8e9197f90509df9409619b5643f8f237
-TextureImporter:
-  internalIDToNameTable:
+      213: -6952084479911380836
+    second: Elf cowo Ngops medium_1
   - first:
-      213: -7277274824335635877
-    second: YesButton_0
+      213: 2350002936379397299
+    second: Elf cowo Ngops medium_2
   - first:
-      213: -6286542617275490664
-    second: YesButton_1
+      213: -8029449622829076612
+    second: Elf cowo Ngops medium_3
   - first:
-      213: 4146825794406028843
-    second: YesButton_2
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/YesButton.png.meta
+      213: -8845675761721655985
+    second: Elf cowo Ngops medium_4
+  - first:
+      213: -4492897917710988045
+    second: Elf cowo Ngops medium_5
+  - first:
+      213: 2659382150250018244
+    second: Elf cowo Ngops medium_6
+  - first:
+      213: -7508714040498438081
+    second: Elf cowo Ngops medium_7
+  - first:
+      213: -9116474361729187232
+    second: Elf cowo Ngops medium_8
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -93,7 +99,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,179 +120,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/barVertical.png.meta
-      name: barVertical_0
+      name: Elf cowo Ngops medium_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 971a739a82257d2c0800000000000000
-      internalID: -4406963375767576199
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barVertical_1
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5973c5505f589c810800000000000000
-      internalID: 1786106014632523669
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barVertical_2
-========
-      name: YesButton_0
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/YesButton.png.meta
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 21
-        width: 57
-        height: 22
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/barVertical.png.meta
-      spriteID: 49667f8597c1dff43b3d853fd869cc8f
-      internalID: 831075439
-========
-      spriteID: b5ac49a9a1de10b90800000000000000
-      internalID: -7277274824335635877
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/YesButton.png.meta
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/barVertical.png.meta
-      name: barVertical_3
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 32
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 58dfc67ae9bead24e931cfc327c895cf
-      internalID: 1671719195
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barVertical_4
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 16
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 182270023fb159646bfd1ed7a93d6a17
-      internalID: -784987510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barVertical_5
-========
-      name: YesButton_1
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/YesButton.png.meta
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 20
-        width: 59
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/barVertical.png.meta
-      spriteID: 4effdcd024b48f64db05b4820c53ab29
-      internalID: -1594754489
-========
-      spriteID: 89e90ff0cc6b1c8a0800000000000000
-      internalID: -6286542617275490664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YesButton_2
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 20
-        width: 59
-        height: 23
+        x: 6
+        y: 1
+        width: 138
+        height: 155
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -295,9 +139,184 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b269ff4d61c7c8930800000000000000
-      internalID: 4146825794406028843
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/YesButton.png.meta
+      spriteID: 6abece6edea197280800000000000000
+      internalID: -9045168767513072730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elf cowo Ngops medium_1
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 1
+        width: 138
+        height: 155
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c98306ecffb358f90800000000000000
+      internalID: -6952084479911380836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elf cowo Ngops medium_2
+      rect:
+        serializedVersion: 2
+        x: 302
+        y: 8
+        width: 138
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b4d4044833ec9020800000000000000
+      internalID: 2350002936379397299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elf cowo Ngops medium_3
+      rect:
+        serializedVersion: 2
+        x: 449
+        y: 8
+        width: 139
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7fe0612c1aa19090800000000000000
+      internalID: -8029449622829076612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elf cowo Ngops medium_4
+      rect:
+        serializedVersion: 2
+        x: 598
+        y: 8
+        width: 138
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4d3c48d2c8dd3580800000000000000
+      internalID: -8845675761721655985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elf cowo Ngops medium_5
+      rect:
+        serializedVersion: 2
+        x: 746
+        y: 8
+        width: 138
+        height: 130
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc8eb2f52506a1c0800000000000000
+      internalID: -4492897917710988045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elf cowo Ngops medium_6
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 8
+        width: 138
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4c5baa3c9f508e420800000000000000
+      internalID: 2659382150250018244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elf cowo Ngops medium_7
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 8
+        width: 139
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f304a10fc50bbc790800000000000000
+      internalID: -7508714040498438081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elf cowo Ngops medium_8
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 8
+        width: 138
+        height: 148
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0620d218ed6cb7180800000000000000
+      internalID: -9116474361729187232
       vertices: []
       indices: 
       edges: []
@@ -306,11 +325,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/barVertical.png.meta
-    spriteID: e98aa00dd2541ce4c86f19757cb59a20
-========
     spriteID: 
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/YesButton.png.meta
     internalID: 0
     vertices: []
     indices: 
@@ -320,18 +335,15 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/barVertical.png.meta
-      barVertical_0: -4406963375767576199
-      barVertical_1: 1786106014632523669
-      barVertical_2: 831075439
-      barVertical_3: 1671719195
-      barVertical_4: -784987510
-      barVertical_5: -1594754489
-========
-      YesButton_0: -7277274824335635877
-      YesButton_1: -6286542617275490664
-      YesButton_2: 4146825794406028843
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/YesButton.png.meta
+      Elf cowo Ngops medium_0: -9045168767513072730
+      Elf cowo Ngops medium_1: -6952084479911380836
+      Elf cowo Ngops medium_2: 2350002936379397299
+      Elf cowo Ngops medium_3: -8029449622829076612
+      Elf cowo Ngops medium_4: -8845675761721655985
+      Elf cowo Ngops medium_5: -4492897917710988045
+      Elf cowo Ngops medium_6: 2659382150250018244
+      Elf cowo Ngops medium_7: -7508714040498438081
+      Elf cowo Ngops medium_8: -9116474361729187232
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

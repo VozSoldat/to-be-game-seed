@@ -11,6 +11,19 @@ namespace StateMachines.ItemListStateMachine
 
         [SerializeField] private ItemListUI itemListUI;
 
+        [Header("name of current category")]
+        private string _currentCategoryName;
+        [SerializeField] private TMPro.TextMeshProUGUI categoryText;
+
+        private readonly Dictionary<ItemCategory, string> _displayNames = new()
+        {
+            { ItemCategory.Glass, "Glass" },
+            { ItemCategory.Coffee, "Coffee Beans" },
+            { ItemCategory.ElementalStone, "Gem Stones" },
+            { ItemCategory.Milk, "Milk Products" },
+            { ItemCategory.MagicItem, "Magic Items" },
+        };
+
         void Start()
         {
             if (itemListUI == null)
@@ -35,10 +48,21 @@ namespace StateMachines.ItemListStateMachine
             {
                 itemListUI.ShowItemsByCategory(category);
             }
+
+            _currentCategoryName = category.ToString();
+
+            if (_displayNames.TryGetValue(category, out var displayName))
+            {
+                categoryText.text = displayName;
+            }
+            else
+            {
+                categoryText.text = category.ToString();
+            }
         }
 
         public override void TransitionToState(ItemListStateEnum newState)
-        {   
+        {
             base.TransitionToState(newState);
         }
         

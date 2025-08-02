@@ -1,6 +1,5 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/barVertical.png.meta
-guid: 5cecc487d1e78e93a9ce6fd677c8b4a7
+guid: 8930e048d7e0d850da9fa753fe35ed1c
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -9,20 +8,6 @@ TextureImporter:
   - first:
       213: 1786106014632523669
     second: barVertical_1
-========
-guid: 8e9197f90509df9409619b5643f8f237
-TextureImporter:
-  internalIDToNameTable:
-  - first:
-      213: -7277274824335635877
-    second: YesButton_0
-  - first:
-      213: -6286542617275490664
-    second: YesButton_1
-  - first:
-      213: 4146825794406028843
-    second: YesButton_2
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/YesButton.png.meta
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -114,24 +99,10 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/barVertical.png.meta
       name: barVertical_0
       rect:
         serializedVersion: 2
@@ -140,7 +111,7 @@ TextureImporter:
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -157,12 +128,12 @@ TextureImporter:
       name: barVertical_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 16
+        x: 16
+        y: 32
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -177,53 +148,44 @@ TextureImporter:
       weights: []
     - serializedVersion: 2
       name: barVertical_2
-========
-      name: YesButton_0
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/YesButton.png.meta
       rect:
         serializedVersion: 2
-        x: 4
-        y: 21
-        width: 57
-        height: 22
+        x: 0
+        y: 16
+        width: 16
+        height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/barVertical.png.meta
-      spriteID: 49667f8597c1dff43b3d853fd869cc8f
-      internalID: 831075439
-========
-      spriteID: b5ac49a9a1de10b90800000000000000
-      internalID: -7277274824335635877
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/YesButton.png.meta
+      spriteID: b36be16095e5fe33ea8f99a85fbbe623
+      internalID: -1259169867
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/barVertical.png.meta
       name: barVertical_3
       rect:
         serializedVersion: 2
         x: 16
-        y: 32
+        y: 16
         width: 16
         height: 16
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58dfc67ae9bead24e931cfc327c895cf
-      internalID: 1671719195
+      spriteID: dec7231c40fe6688eaa2f7dc761998a8
+      internalID: 1978548156
       vertices: []
       indices: 
       edges: []
@@ -232,72 +194,42 @@ TextureImporter:
       name: barVertical_4
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
+        x: 0
+        y: 0
         width: 16
         height: 16
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 182270023fb159646bfd1ed7a93d6a17
-      internalID: -784987510
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: barVertical_5
-========
-      name: YesButton_1
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/YesButton.png.meta
-      rect:
-        serializedVersion: 2
-        x: 67
-        y: 20
-        width: 59
-        height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/barVertical.png.meta
-      spriteID: 4effdcd024b48f64db05b4820c53ab29
-      internalID: -1594754489
-========
-      spriteID: 89e90ff0cc6b1c8a0800000000000000
-      internalID: -6286542617275490664
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: YesButton_2
-      rect:
-        serializedVersion: 2
-        x: 131
-        y: 20
-        width: 59
-        height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b269ff4d61c7c8930800000000000000
-      internalID: 4146825794406028843
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/YesButton.png.meta
+      spriteID: fc14e08d50b8fa76483f5b35c3251759
+      internalID: 247549054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: barVertical_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4697bdf393a273428a4d2e8da7d9d17c
+      internalID: -1080987625
       vertices: []
       indices: 
       edges: []
@@ -306,11 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/barVertical.png.meta
-    spriteID: e98aa00dd2541ce4c86f19757cb59a20
-========
-    spriteID: 
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/YesButton.png.meta
+    spriteID: f2710fe76d0c6c96eb29a354521c362e
     internalID: 0
     vertices: []
     indices: 
@@ -320,18 +248,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/barVertical.png.meta
       barVertical_0: -4406963375767576199
       barVertical_1: 1786106014632523669
-      barVertical_2: 831075439
-      barVertical_3: 1671719195
-      barVertical_4: -784987510
-      barVertical_5: -1594754489
-========
-      YesButton_0: -7277274824335635877
-      YesButton_1: -6286542617275490664
-      YesButton_2: 4146825794406028843
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/YesButton.png.meta
+      barVertical_2: -1259169867
+      barVertical_3: 1978548156
+      barVertical_4: 247549054
+      barVertical_5: -1080987625
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

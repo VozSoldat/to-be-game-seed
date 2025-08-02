@@ -1,28 +1,25 @@
 fileFormatVersion: 2
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-guid: 87b7dd73b8201f9c5a7f1fbd4976694a
+guid: bff45fce89592affab28c8c833c6da75
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5156776694448688124
-    second: bar_0
+      213: 5175804588053458776
+    second: dwarf-Sheet_0
   - first:
-      213: 2978572862657520574
-    second: bar_1
-========
-guid: 975661f4067cd1a47a51bbe4a246abcb
-TextureImporter:
-  internalIDToNameTable:
+      213: 2651603194024701260
+    second: dwarf-Sheet_1
   - first:
-      213: 7688679314300870848
-    second: NoButton_0
+      213: 5562796577971763642
+    second: dwarf-Sheet_2
   - first:
-      213: 4400926762809503569
-    second: NoButton_1
+      213: -1443416878530143109
+    second: dwarf-Sheet_3
   - first:
-      213: -995944346279391903
-    second: NoButton_2
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      213: -3781900567007822792
+    second: dwarf-Sheet_4
+  - first:
+      213: 7638512883239129256
+    second: dwarf-Sheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -55,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -93,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,34 +111,17 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-      name: bar_0
-========
-      name: NoButton_0
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      name: dwarf-Sheet_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 22
-        width: 57
-        height: 22
+        x: 5
+        y: 6
+        width: 54
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -150,29 +130,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-      spriteID: cfb80a2f41d809740800000000000000
-      internalID: 5156776694448688124
-========
-      spriteID: 0c02cc8991da3ba60800000000000000
-      internalID: 7688679314300870848
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      spriteID: 85f63c9a9d624d740800000000000000
+      internalID: 5175804588053458776
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-      name: bar_1
-========
-      name: NoButton_1
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      name: dwarf-Sheet_1
       rect:
         serializedVersion: 2
-        x: 67
-        y: 21
-        width: 59
-        height: 24
+        x: 69
+        y: 6
+        width: 54
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,29 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-      spriteID: eb3e158cc34065920800000000000000
-      internalID: 2978572862657520574
-========
-      spriteID: 15f25cbd29b331d30800000000000000
-      internalID: 4400926762809503569
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      spriteID: c4d22216e036cc420800000000000000
+      internalID: 2651603194024701260
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-      name: bar_2
-========
-      name: NoButton_2
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      name: dwarf-Sheet_2
       rect:
         serializedVersion: 2
-        x: 131
-        y: 21
-        width: 59
-        height: 23
+        x: 135
+        y: 5
+        width: 52
+        height: 57
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -212,79 +174,74 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-      spriteID: 9ef025f31c26b8c43a9e1679a2d0ee23
-      internalID: -378123439
+      spriteID: ab9f3c3c306033d40800000000000000
+      internalID: 5562796577971763642
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bar_3
+      name: dwarf-Sheet_3
       rect:
         serializedVersion: 2
-        x: 48
-        y: 0
-        width: 16
-        height: 16
+        x: 199
+        y: 6
+        width: 52
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 3a41823e9b360dd46a3c91a425bf69b1
-      internalID: 286418322
+      spriteID: b7c586c1ff3f7fbe0800000000000000
+      internalID: -1443416878530143109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bar_4
+      name: dwarf-Sheet_4
       rect:
         serializedVersion: 2
-        x: 64
-        y: 0
-        width: 16
-        height: 16
+        x: 263
+        y: 6
+        width: 52
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 7daa0ef2fa060d94b8c4eb9e9ed1197b
-      internalID: 1922987802
+      spriteID: 83c76afb87df38bc0800000000000000
+      internalID: -3781900567007822792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bar_5
+      name: dwarf-Sheet_5
       rect:
         serializedVersion: 2
-        x: 80
-        y: 0
-        width: 16
-        height: 16
+        x: 327
+        y: 6
+        width: 52
+        height: 56
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 4cb38f95636753a489565194a619e6d6
-      internalID: 1814274608
-========
-      spriteID: 16d45ffc4e1bd22f0800000000000000
-      internalID: -995944346279391903
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      spriteID: 8a096b92ff2710a60800000000000000
+      internalID: 7638512883239129256
       vertices: []
       indices: 
       edges: []
@@ -293,11 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-    spriteID: eb3b4c4e7f9a0184ea4e5688d7d73c3b
-========
     spriteID: 
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
     internalID: 0
     vertices: []
     indices: 
@@ -307,18 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-<<<<<<<< HEAD:Assets/App/Sprites/UI/ConfirmationButtons/bar.png.meta
-      bar_0: 5156776694448688124
-      bar_1: 2978572862657520574
-      bar_2: -378123439
-      bar_3: 286418322
-      bar_4: 1922987802
-      bar_5: 1814274608
-========
-      NoButton_0: 7688679314300870848
-      NoButton_1: 4400926762809503569
-      NoButton_2: -995944346279391903
->>>>>>>> 37e018648fcd973fde062525f4af148e4076ad54:Assets/App/Sprites/UI/ConfirmationButtons/NoButton.png.meta
+      dwarf-Sheet_0: 5175804588053458776
+      dwarf-Sheet_1: 2651603194024701260
+      dwarf-Sheet_2: 5562796577971763642
+      dwarf-Sheet_3: -1443416878530143109
+      dwarf-Sheet_4: -3781900567007822792
+      dwarf-Sheet_5: 7638512883239129256
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
