@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MoonVeil
   m_EditorClassIdentifier: 
   itemName: MoonVeil
-  itemIcon: {fileID: -3790465719740093516, guid: cc4c472b461e2e548bf97f3348430ac9, type: 3}
+  itemIcon: {fileID: -983324115653866399, guid: 8918f5b444b7a7cbab1f28c54d1516c1, type: 3}
   category: 3
   sweetness: 2
   bitterness: -1

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53491efc198d0b47bb6234c4827a82f, type: 3}
   m_Name: LacrimaLux
   m_EditorClassIdentifier: 
-  itemName: Lactima Lux
-  itemIcon: {fileID: -2880734798192188640, guid: cca3123c7f5f2f74d83b20c94f7723bc, type: 3}
+  itemName: Lacrima Lux
+  itemIcon: {fileID: -5586807866896597309, guid: b97364cc8a237545496893226cf5e77b, type: 3}
   category: 4
   sweetness: 0
   bitterness: 0
