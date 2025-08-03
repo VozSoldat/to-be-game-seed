@@ -4,29 +4,32 @@ public class MB_GradeSystem : MonoBehaviour
 {
     [SerializeField] private MB_BrewingStack brewingStack;
     [SerializeField] private SO_CharaDanPesan charaDanPesan;
-    [SerializeField] private SaveFileSetup saveFileSetup; // Reference to SaveFileSetup
-    private SaveFile saveFile;
+    [SerializeField] private SO_GradeScore gradeScore;
+
+
+    // [SerializeField] private SaveFileSetup saveFileSetup; // Reference to SaveFileSetup
+    // private SaveFile saveFile;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         // Try to get the SaveFileSetup component
-        if (saveFileSetup == null)
-        {
-            saveFileSetup = GetComponent<SaveFileSetup>();
-            
-            // If still null, try to find it in the scene
-            if (saveFileSetup == null)
-            {
-                saveFileSetup = FindObjectOfType<SaveFileSetup>();
-                if (saveFileSetup == null)
-                {
-                    Debug.LogError("SaveFileSetup component not found. Please add it to this GameObject or reference it in the Inspector.");
-                    return;
-                }
-            }
-        }
-        
-        saveFile = saveFileSetup.GetSaveFile();
+        // if (saveFileSetup == null)
+        // {
+        //     saveFileSetup = GetComponent<SaveFileSetup>();
+
+        //     // If still null, try to find it in the scene
+        //     if (saveFileSetup == null)
+        //     {
+        //         saveFileSetup = FindObjectOfType<SaveFileSetup>();
+        //         if (saveFileSetup == null)
+        //         {
+        //             Debug.LogError("SaveFileSetup component not found. Please add it to this GameObject or reference it in the Inspector.");
+        //             return;
+        //         }
+        //     }
+        // }
+
+        // saveFile = saveFileSetup.GetSaveFile();
     }
 
     // Update is called once per frame
@@ -53,7 +56,51 @@ public class MB_GradeSystem : MonoBehaviour
         return Mathf.RoundToInt(score);
     }
 
+    int GradeBuff()
+    {
+        int buffScore = 0;
+        ItemBuff[] playerBuffs = brewingStack.GetBuffs();
+        ItemBuff[] targetBuffs = charaDanPesan.characterOrder?.itemBuffs ?? new ItemBuff[0];
 
+        foreach (ItemBuff playerBuff in playerBuffs)
+        {
+            bool buffMatched = false;
+            foreach (ItemBuff targetBuff in targetBuffs)
+            {
+                if (playerBuff == targetBuff)
+                {
+                    buffScore += 10;
+                    buffMatched = true;
+                    break;
+                }
+            }
+
+            if (!buffMatched)
+            {
+                buffScore -= 5;
+            }
+        }
+
+        foreach (ItemBuff targetBuff in targetBuffs)
+        {
+            bool buffFound = false;
+            foreach (ItemBuff playerBuff in playerBuffs)
+            {
+                if (playerBuff == targetBuff)
+                {
+                    buffFound = true;
+                    break;
+                }
+            }
+
+            if (!buffFound)
+            {
+                buffScore -= 10;
+            }
+        }
+
+        return buffScore;
+    }
 
     public void Hasil()
     {
@@ -70,23 +117,36 @@ public class MB_GradeSystem : MonoBehaviour
         int scoreSweetness = GradeInput(totalSweetness, orderSweetness);
         int scoreTemperature = GradeInput(totalTemperature, orderTemperature);
 
-        int nilai = scoreSweetness + scoreBitterness + scoreTemperature;
-        // finalScore += nilai;
+        int scoreBuff = GradeBuff();
+
+        int nilai = scoreSweetness + scoreBitterness + scoreTemperature + scoreBuff;
+
         Debug.Log("Bitterness Score: " + scoreBitterness);
         Debug.Log("Sweetness Score: " + scoreSweetness);
-        Debug.Log("Temperature Score:" + scoreTemperature);
+        Debug.Log("Temperature Score: " + scoreTemperature);
+        Debug.Log("Buff Score: " + scoreBuff);
         Debug.Log("Total Nilai: " + nilai);
 
-        // Check if saveFile is not null before attempting to save
-        if (saveFile != null)
+        // Save scores to the ScriptableObject
+        if (gradeScore != null)
         {
-            saveFile.AddOrUpdateData("leaderboard", nilai);
-            saveFile.Save();
-            Debug.Log("Score saved successfully!");
+            gradeScore.SaveScores(scoreBitterness, scoreSweetness, scoreTemperature, scoreBuff);
+            Debug.Log("Score saved to ScriptableObject successfully!");
         }
         else
-        {
-            Debug.LogError("Cannot save score: SaveFile is null. Make sure SaveFileSetup is properly configured.");
-        }
+
+            Debug.LogError("Cannot save score: gradeScore ScriptableObject is null. Please assign it in the Inspector.");
     }
+
+    // Check if saveFile is not null before attempting to save
+    // if (saveFile != null)
+    // {
+    //     saveFile.AddOrUpdateData("leaderboard", nilai);
+    //     saveFile.Save();
+    //     Debug.Log("Score saved successfully!");
+    // }
+    // else
+    // {
+    //     Debug.LogError("Cannot save score: SaveFile is null. Make sure SaveFileSetup is properly configured.");
+    // }
 }

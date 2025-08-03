@@ -100,18 +100,31 @@ public class MB_BrewingStack : MonoBehaviour
             stackVisualizer.UpdateVisualization();
         }
     }
+    
+    public ItemBuff[] GetBuffs()
+    {
+        List<ItemBuff> buffs = new List<ItemBuff>();
+        foreach (ItemData item in Pours)
+        {
+            if (item.itemBuffs != null)
+            {
+                buffs.AddRange(item.itemBuffs);
+            }
+        }
+        return buffs.ToArray();
+    }
 
     public void ResetPours()
     {
         Pours.Clear();
         isMagicItemPoured = false;
-        
+
         // Update the stack bar display when pours are reset
         if (stackBar != null)
         {
             stackBar.UpdateDisplay();
         }
-        
+
         // Update visualization when stack is reset
         if (stackVisualizer != null)
         {
