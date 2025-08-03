@@ -40,7 +40,8 @@ public class MB_PatronOrderGenerator : MonoBehaviour
     {
         if (_itemListUI == null)
         {
-            _itemListUI = FindObjectOfType<ItemListUI>();
+            // _itemListUI = FindObjectOfType<ItemListUI>();
+            _itemListUI = FindFirstObjectByType<ItemListUI>();
             if (_itemListUI == null)
             {
                 Debug.LogError("ItemListUI component not found in the scene. PatronOrderGenerator will not work correctly.");

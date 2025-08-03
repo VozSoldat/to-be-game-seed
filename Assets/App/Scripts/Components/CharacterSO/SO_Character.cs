@@ -5,6 +5,6 @@ public class SO_Character : ScriptableObject
 {
     public string characterName;
     public Sprite staticSprite;
-    public Animation idleAnimation;
-    public Animation drinkAnimation;
+    public AnimationClip idleAnimation;
+    public AnimationClip drinkAnimation;
 }
