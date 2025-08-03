@@ -1,13 +1,32 @@
 using UnityEngine;
-
+using Esper.ESave;
 public class MB_GradeSystem : MonoBehaviour
 {
     [SerializeField] private MB_BrewingStack brewingStack;
     [SerializeField] private SO_CharaDanPesan charaDanPesan;
+    [SerializeField] private SaveFileSetup saveFileSetup; // Reference to SaveFileSetup
+    private SaveFile saveFile;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        // Try to get the SaveFileSetup component
+        if (saveFileSetup == null)
+        {
+            saveFileSetup = GetComponent<SaveFileSetup>();
+            
+            // If still null, try to find it in the scene
+            if (saveFileSetup == null)
+            {
+                saveFileSetup = FindObjectOfType<SaveFileSetup>();
+                if (saveFileSetup == null)
+                {
+                    Debug.LogError("SaveFileSetup component not found. Please add it to this GameObject or reference it in the Inspector.");
+                    return;
+                }
+            }
+        }
+        
+        saveFile = saveFileSetup.GetSaveFile();
     }
 
     // Update is called once per frame
@@ -38,6 +57,7 @@ public class MB_GradeSystem : MonoBehaviour
 
     public void Hasil()
     {
+
         int totalBitterness = (int)brewingStack.TotalBitterness;
         int totalSweetness = (int)brewingStack.TotalSweetness;
         int totalTemperature = (int)brewingStack.TotalTemperature;
@@ -50,13 +70,23 @@ public class MB_GradeSystem : MonoBehaviour
         int scoreSweetness = GradeInput(totalSweetness, orderSweetness);
         int scoreTemperature = GradeInput(totalTemperature, orderTemperature);
 
-        int nilai = (scoreSweetness + scoreBitterness + scoreTemperature) / 3;
+        int nilai = scoreSweetness + scoreBitterness + scoreTemperature;
         // finalScore += nilai;
         Debug.Log("Bitterness Score: " + scoreBitterness);
         Debug.Log("Sweetness Score: " + scoreSweetness);
         Debug.Log("Temperature Score:" + scoreTemperature);
         Debug.Log("Total Nilai: " + nilai);
 
-        // return nilai;
+        // Check if saveFile is not null before attempting to save
+        if (saveFile != null)
+        {
+            saveFile.AddOrUpdateData("leaderboard", nilai);
+            saveFile.Save();
+            Debug.Log("Score saved successfully!");
+        }
+        else
+        {
+            Debug.LogError("Cannot save score: SaveFile is null. Make sure SaveFileSetup is properly configured.");
+        }
     }
 }
