@@ -10,7 +10,7 @@ public class MB_SoundActiveness : MonoBehaviour
     void Start()
     {
         if (resetToDefault)
-            isActive.SetValue(defaultValue);   
+            isActive.SetValue(defaultValue);
     }
     public void SetSoundActive(bool value)
     {
@@ -20,4 +20,6 @@ public class MB_SoundActiveness : MonoBehaviour
     {
         isActive.SetValue(!isActive.Value);
     }
+    
+
 }
