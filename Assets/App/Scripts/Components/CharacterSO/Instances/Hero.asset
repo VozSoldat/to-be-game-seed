@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dbeb494f161648144b684c603d88567a, type: 3}
-  m_Name: Dwarf
+  m_Name: Hero
   m_EditorClassIdentifier: 
-  characterName: Dwarf
-  staticSprite: {fileID: 0}
-  idleAnimation: {fileID: 0}
-  drinkAnimation: {fileID: 0}
+  characterName: Hero
+  staticSprite: {fileID: -6816889732778146718, guid: 4420321e4249119b1b0e7eef66e08f75, type: 3}
+  idleAnimation: {fileID: 7400000, guid: 3a61773f7d3fcbed1880bfd837524580, type: 2}
+  drinkAnimation: {fileID: 7400000, guid: add3b307b946bde818aae073997c0cef, type: 2}

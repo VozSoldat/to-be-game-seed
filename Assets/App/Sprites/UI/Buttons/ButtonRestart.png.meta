@@ -1,25 +1,16 @@
 fileFormatVersion: 2
-guid: 4420321e4249119b1b0e7eef66e08f75
+guid: b91969794d394a47c9c3c9baee158fe2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6816889732778146718
-    second: MaleMedCup_0
+      213: 5441968085629492590
+    second: ButtonRestart_0
   - first:
-      213: -2629078177219735719
-    second: MaleMedCup_1
+      213: 2759662110552576521
+    second: ButtonRestart_1
   - first:
-      213: 5346187401950060931
-    second: MaleMedCup_2
-  - first:
-      213: -7977701611640442322
-    second: MaleMedCup_3
-  - first:
-      213: 1255317062136019137
-    second: MaleMedCup_4
-  - first:
-      213: 2244827570201708611
-    second: MaleMedCup_5
+      213: 1792096374675083217
+    second: ButtonRestart_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -90,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -115,13 +106,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MaleMedCup_0
+      name: ButtonRestart_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 205
-        height: 200
+        x: 14
+        y: 14
+        width: 36
+        height: 36
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,20 +121,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 26440ccc7ea8561a0800000000000000
-      internalID: -6816889732778146718
+      spriteID: e6d55fe1421c58b40800000000000000
+      internalID: 5441968085629492590
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleMedCup_1
+      name: ButtonRestart_1
       rect:
         serializedVersion: 2
-        x: 205
-        y: 0
-        width: 205
-        height: 200
+        x: 77
+        y: 13
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 95f0618c353a38bd0800000000000000
-      internalID: -2629078177219735719
+      spriteID: 9025797711a4c4620800000000000000
+      internalID: 2759662110552576521
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleMedCup_2
+      name: ButtonRestart_2
       rect:
         serializedVersion: 2
-        x: 410
-        y: 0
-        width: 205
-        height: 200
+        x: 142
+        y: 14
+        width: 36
+        height: 35
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,74 +165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 381e6e3ed19713a40800000000000000
-      internalID: 5346187401950060931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MaleMedCup_3
-      rect:
-        serializedVersion: 2
-        x: 615
-        y: 0
-        width: 205
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e223c12e6a2894190800000000000000
-      internalID: -7977701611640442322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MaleMedCup_4
-      rect:
-        serializedVersion: 2
-        x: 820
-        y: 0
-        width: 205
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c8ba119738cb6110800000000000000
-      internalID: 1255317062136019137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MaleMedCup_5
-      rect:
-        serializedVersion: 2
-        x: 1025
-        y: 0
-        width: 205
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 34840ef08ca372f10800000000000000
-      internalID: 2244827570201708611
+      spriteID: 1df06c7682eced810800000000000000
+      internalID: 1792096374675083217
       vertices: []
       indices: 
       edges: []
@@ -250,7 +175,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d5374098eaa969b00a7f2a566a279c09
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MaleMedCup_0: -6816889732778146718
-      MaleMedCup_1: -2629078177219735719
-      MaleMedCup_2: 5346187401950060931
-      MaleMedCup_3: -7977701611640442322
-      MaleMedCup_4: 1255317062136019137
-      MaleMedCup_5: 2244827570201708611
+      ButtonRestart_0: 5441968085629492590
+      ButtonRestart_1: 2759662110552576521
+      ButtonRestart_2: 1792096374675083217
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

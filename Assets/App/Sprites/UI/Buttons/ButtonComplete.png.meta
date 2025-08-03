@@ -1,25 +1,10 @@
 fileFormatVersion: 2
-guid: 4420321e4249119b1b0e7eef66e08f75
+guid: 056b555fc712ad23a9697536819592fc
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -6816889732778146718
-    second: MaleMedCup_0
-  - first:
-      213: -2629078177219735719
-    second: MaleMedCup_1
-  - first:
-      213: 5346187401950060931
-    second: MaleMedCup_2
-  - first:
-      213: -7977701611640442322
-    second: MaleMedCup_3
-  - first:
-      213: 1255317062136019137
-    second: MaleMedCup_4
-  - first:
-      213: 2244827570201708611
-    second: MaleMedCup_5
+      213: 9039141669566354615
+    second: ButtonComplete_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -115,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: MaleMedCup_0
+      name: ButtonComplete_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 205
-        height: 200
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -130,118 +115,52 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 26440ccc7ea8561a0800000000000000
-      internalID: -6816889732778146718
+      spriteID: 7b41fe0057b717d70800000000000000
+      internalID: 9039141669566354615
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleMedCup_1
+      name: ButtonComplete_1
       rect:
         serializedVersion: 2
-        x: 205
+        x: 64
         y: 0
-        width: 205
-        height: 200
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 95f0618c353a38bd0800000000000000
-      internalID: -2629078177219735719
+      spriteID: 27b1ef3cb7ed71c599fc27f284e3c170
+      internalID: 89751516
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: MaleMedCup_2
+      name: ButtonComplete_2
       rect:
         serializedVersion: 2
-        x: 410
+        x: 128
         y: 0
-        width: 205
-        height: 200
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 381e6e3ed19713a40800000000000000
-      internalID: 5346187401950060931
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MaleMedCup_3
-      rect:
-        serializedVersion: 2
-        x: 615
-        y: 0
-        width: 205
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e223c12e6a2894190800000000000000
-      internalID: -7977701611640442322
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MaleMedCup_4
-      rect:
-        serializedVersion: 2
-        x: 820
-        y: 0
-        width: 205
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1c8ba119738cb6110800000000000000
-      internalID: 1255317062136019137
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: MaleMedCup_5
-      rect:
-        serializedVersion: 2
-        x: 1025
-        y: 0
-        width: 205
-        height: 200
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 34840ef08ca372f10800000000000000
-      internalID: 2244827570201708611
+      spriteID: 2509a043ea47c06d1b569bf6078f1b98
+      internalID: 1002841521
       vertices: []
       indices: 
       edges: []
@@ -250,7 +169,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: d5374098eaa969b00a7f2a566a279c09
+    spriteID: 9b2cfc09c4f7c9319a54d5fe90659711
     internalID: 0
     vertices: []
     indices: 
@@ -260,12 +179,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      MaleMedCup_0: -6816889732778146718
-      MaleMedCup_1: -2629078177219735719
-      MaleMedCup_2: 5346187401950060931
-      MaleMedCup_3: -7977701611640442322
-      MaleMedCup_4: 1255317062136019137
-      MaleMedCup_5: 2244827570201708611
+      ButtonComplete_0: 9039141669566354615
+      ButtonComplete_1: 89751516
+      ButtonComplete_2: 1002841521
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
