@@ -1,5 +1,6 @@
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MB_ShowStatUI : MonoBehaviour
 {
@@ -24,6 +25,9 @@ public class MB_ShowStatUI : MonoBehaviour
             sweetnessBar.UpdateBar(brewingStack.TotalSweetness);
             bitternessBar.UpdateBar(brewingStack.TotalBitterness);
             temperatureBar.UpdateBar(brewingStack.TotalTemperature);
+
+            //rebuild screen
+            LayoutRebuilder.ForceRebuildLayoutImmediate(sweetnessBar.transform as RectTransform);
         }
     }
 }

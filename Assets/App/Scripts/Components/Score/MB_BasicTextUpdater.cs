@@ -7,10 +7,6 @@ public class MB_BasicTextUpdater : MonoBehaviour
     [SerializeField] private TextMeshProUGUI tmpText;
     [SerializeField] private SO_GradeScore GradeScore;
 
-
-    [Header("Text Settings")]
-    private string currentValue = "";
-
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

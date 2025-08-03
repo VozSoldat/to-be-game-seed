@@ -22,13 +22,19 @@ public class ItemCategoryButtonManager : MonoBehaviour
 
     void Start()
     {
+        Debug.Log("ItemCategoryButtonManager Start method called");
+        
         if (stateContext == null)
+        {
             stateContext = FindAnyObjectByType<MB_ItemListStateContext>();
+            Debug.Log("Found state context: " + (stateContext != null ? "Success" : "Failed"));
+        }
 
         SetupButtons();
         
         // Set initial selected button (Glass by default)
         SetSelectedButton(glassButton);
+        Debug.Log("Initial button selection complete");
     }
 
     void SetupButtons()
@@ -52,6 +58,8 @@ public class ItemCategoryButtonManager : MonoBehaviour
 
     void OnCategoryButtonClicked(ItemListStateEnum state, Button clickedButton)
     {
+        Debug.Log($"Button clicked: {state}");
+        
         if (stateContext != null)
         {
             Debug.Log($"Transitioning to {state} state");
@@ -66,9 +74,12 @@ public class ItemCategoryButtonManager : MonoBehaviour
 
     void SetSelectedButton(Button selectedButton)
     {
+        Debug.Log($"Setting selected button: {selectedButton.name}");
+        
         // Reset previous button color
         if (currentSelectedButton != null)
         {
+            Debug.Log($"Resetting previous button: {currentSelectedButton.name}");
             // currentSelectedButton.GetComponent<Image>().color = normalColor;
         }
 
@@ -77,11 +88,14 @@ public class ItemCategoryButtonManager : MonoBehaviour
         {
             // selectedButton.GetComponent<Image>().color = selectedColor;
             currentSelectedButton = selectedButton;
+            Debug.Log($"New selected button set: {currentSelectedButton.name}");
         }
     }
 
     void OnDestroy()
     {
+        Debug.Log("ItemCategoryButtonManager OnDestroy called - cleaning up listeners");
+        
         // Clean up listeners
         glassButton?.onClick.RemoveAllListeners();
         coffeeButton?.onClick.RemoveAllListeners();
