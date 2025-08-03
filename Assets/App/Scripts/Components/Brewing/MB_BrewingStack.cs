@@ -8,6 +8,8 @@ public class MB_BrewingStack : MonoBehaviour
     [SerializeField] private int maxPour = 0;
     [SerializeField] private MB_ShowStatUI StackInformation;
 
+    [SerializeField] private StackBar stackBar;
+
     private bool isMagicItemPoured = false;
 
     void Start()
@@ -25,6 +27,11 @@ public class MB_BrewingStack : MonoBehaviour
         }
 
         Debug.Log($"Glass size changed. New max capacity: {maxPour}");
+        
+        if (stackBar != null)
+        {
+            stackBar.UpdateDisplay();
+        }
     }
 
     public int GetMaxPour()
@@ -71,8 +78,9 @@ public class MB_BrewingStack : MonoBehaviour
         // update text on the scene
 
         if (StackInformation is MB_ShowStatUI statUI)
-        {
+        {   
             statUI.Update();
+            stackBar.UpdateDisplay();
         }
         else
         {
@@ -84,6 +92,12 @@ public class MB_BrewingStack : MonoBehaviour
     {
         Pours.Clear();
         isMagicItemPoured = false;
+        
+        // Update the stack bar display when pours are reset
+        if (stackBar != null)
+        {
+            stackBar.UpdateDisplay();
+        }
     }
 
     public int TotalSweetness

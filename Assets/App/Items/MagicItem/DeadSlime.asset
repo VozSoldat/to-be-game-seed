@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: Dead Slime
   itemIcon: {fileID: -6306282405663924564, guid: b97364cc8a237545496893226cf5e77b, type: 3}
   category: 4
+  stackColor: {r: 0.6392157, g: 0.8000001, b: 0.85098046, a: 1}
   sweetness: 0
   bitterness: 0
   temperature: 0

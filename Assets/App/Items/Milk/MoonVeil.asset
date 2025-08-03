@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: MoonVeil
   itemIcon: {fileID: -983324115653866399, guid: 8918f5b444b7a7cbab1f28c54d1516c1, type: 3}
   category: 3
+  stackColor: {r: 0.63529414, g: 0.74509805, b: 0.77647066, a: 1}
   sweetness: 2
   bitterness: -1
   temperature: 0

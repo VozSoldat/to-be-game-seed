@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: Rubasta
   itemIcon: {fileID: 7503883827514999236, guid: dcbfdf849d4149fa8aeef0b677bf339d, type: 3}
   category: 1
+  stackColor: {r: 0.34509805, g: 0.24705884, b: 0.11764707, a: 1}
   sweetness: 0
   bitterness: 2
   temperature: 1
