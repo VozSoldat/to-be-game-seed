@@ -32,6 +32,13 @@ public class PauseMenu : MonoBehaviour
         isPaused = true;
     }
 
+    public void OnGameHome()
+    {
+        pauseUI.SetActive(false);
+        Time.timeScale = 1f;
+        SceneManager.LoadScene("StartMenu");
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
