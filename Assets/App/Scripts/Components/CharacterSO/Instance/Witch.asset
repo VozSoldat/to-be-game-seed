@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbeb494f161648144b684c603d88567a, type: 3}
   m_Name: Witch
   m_EditorClassIdentifier: 
-  characterName: 
-  staticSprite: {fileID: 0}
+  characterName: Witch
+  staticSprite: {fileID: 6410855352560526350, guid: 112cdb8e09de63644afd4661eb8c56b0, type: 3}
   idleAnimation: {fileID: 0}
   drinkAnimation: {fileID: 0}
