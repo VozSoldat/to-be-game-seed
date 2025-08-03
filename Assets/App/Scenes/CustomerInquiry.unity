@@ -479,6 +479,7 @@ GameObject:
   - component: {fileID: 1382221739}
   - component: {fileID: 1382221741}
   - component: {fileID: 1382221740}
+  - component: {fileID: 1382221742}
   m_Layer: 5
   m_Name: Character
   m_TagString: Untagged
@@ -543,6 +544,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1382221738}
   m_CullTransparentMesh: 1
+--- !u!114 &1382221742
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382221738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb8a0b6e0cfafef4a9409c1baca87bf2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  patronOrderGenerator: {fileID: 0}
+  brewingStack: {fileID: 0}
+  showScoreSubmit: {fileID: 0}
+  userReq: {fileID: 0}
+  order: {fileID: 0}
+  orderSourceItems:
+  - {fileID: 0}
+  finalScore: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
