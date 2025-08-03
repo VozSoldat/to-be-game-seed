@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: Lacrima Lux
   itemIcon: {fileID: -5586807866896597309, guid: b97364cc8a237545496893226cf5e77b, type: 3}
   category: 4
+  stackColor: {r: 0.9686275, g: 0.73333335, b: 0.24313727, a: 1}
   sweetness: 0
   bitterness: 0
   temperature: 0

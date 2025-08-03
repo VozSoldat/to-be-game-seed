@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: Tauvera
   itemIcon: {fileID: -8010453145305160687, guid: 8918f5b444b7a7cbab1f28c54d1516c1, type: 3}
   category: 3
+  stackColor: {r: 0.75294125, g: 0.73333335, b: 0.70980394, a: 1}
   sweetness: 2
   bitterness: -2
   temperature: 0

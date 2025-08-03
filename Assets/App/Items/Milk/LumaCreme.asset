@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: LumaCreme
   itemIcon: {fileID: -321318036669055807, guid: 8918f5b444b7a7cbab1f28c54d1516c1, type: 3}
   category: 3
+  stackColor: {r: 1, g: 0.6784314, b: 0.49411768, a: 1}
   sweetness: 1
   bitterness: -2
   temperature: 0

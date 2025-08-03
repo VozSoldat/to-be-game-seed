@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 8077488572174317580}
   - component: {fileID: 1254756127767587517}
   - component: {fileID: 7205083899641968522}
-  - component: {fileID: 4572761491670484933}
+  - component: {fileID: 975757526597673705}
   m_Layer: 5
-  m_Name: Vertical Bar
+  m_Name: Stack Bar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -78,7 +78,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &4572761491670484933
+--- !u!114 &975757526597673705
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -87,20 +87,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 282019033742417225}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bf89f4ab28fd87a4b83aac254e60b818, type: 3}
+  m_Script: {fileID: 11500000, guid: a4a9e8c5956f534458474a10b1620906, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxValue: 5
-  currentValue: 0
-  filledLeft: {fileID: 1671719195, guid: 09ea2ba618ef4b944a621078f13b8de9, type: 3}
-  filledCenter: {fileID: -784987510, guid: 09ea2ba618ef4b944a621078f13b8de9, type: 3}
-  filledRight: {fileID: -1594754489, guid: 09ea2ba618ef4b944a621078f13b8de9, type: 3}
-  emptyLeft: {fileID: -4406963375767576199, guid: 09ea2ba618ef4b944a621078f13b8de9, type: 3}
-  emptyCenter: {fileID: 1786106014632523669, guid: 09ea2ba618ef4b944a621078f13b8de9, type: 3}
-  emptyRight: {fileID: 831075439, guid: 09ea2ba618ef4b944a621078f13b8de9, type: 3}
+  filledLeft: {fileID: 1978548156, guid: 8930e048d7e0d850da9fa753fe35ed1c, type: 3}
+  filledCenter: {fileID: 1978548156, guid: 8930e048d7e0d850da9fa753fe35ed1c, type: 3}
+  filledRight: {fileID: 1978548156, guid: 8930e048d7e0d850da9fa753fe35ed1c, type: 3}
+  emptyLeft: {fileID: -4406963375767576199, guid: 8930e048d7e0d850da9fa753fe35ed1c, type: 3}
+  emptyCenter: {fileID: -1259169867, guid: 8930e048d7e0d850da9fa753fe35ed1c, type: 3}
+  emptyRight: {fileID: 247549054, guid: 8930e048d7e0d850da9fa753fe35ed1c, type: 3}
   filledBarRoot: {fileID: 8932237997269283688}
   emptyBarRoot: {fileID: 8677405153717140782}
   imagePrefab: {fileID: 1188753594065452675, guid: a260056819ac31446bd215d5bb49f2e7, type: 3}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  brewingStack: {fileID: 0}
 --- !u!1 &953208360635997101
 GameObject:
   m_ObjectHideFlags: 0
@@ -113,7 +113,7 @@ GameObject:
   - component: {fileID: 7649375505222012389}
   - component: {fileID: 2496822932908463765}
   m_Layer: 5
-  m_Name: EmptyBar Top
+  m_Name: EmptyBar Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -4406963375767576199, guid: 09ea2ba618ef4b944a621078f13b8de9, type: 3}
+  m_Sprite: {fileID: -4406963375767576199, guid: 8930e048d7e0d850da9fa753fe35ed1c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -241,7 +241,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1786106014632523669, guid: 09ea2ba618ef4b944a621078f13b8de9, type: 3}
+  m_Sprite: {fileID: -1259169867, guid: 8930e048d7e0d850da9fa753fe35ed1c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -316,7 +316,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -784987510, guid: 09ea2ba618ef4b944a621078f13b8de9, type: 3}
+  m_Sprite: {fileID: 1978548156, guid: 8930e048d7e0d850da9fa753fe35ed1c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 5753947926595593115}
   - component: {fileID: 7386987758174179577}
   m_Layer: 5
-  m_Name: FilledBar Bottom
+  m_Name: FilledBar Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -391,7 +391,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1594754489, guid: 09ea2ba618ef4b944a621078f13b8de9, type: 3}
+  m_Sprite: {fileID: 1978548156, guid: 8930e048d7e0d850da9fa753fe35ed1c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -413,7 +413,7 @@ GameObject:
   - component: {fileID: 2703369967672201147}
   - component: {fileID: 3404827366704944696}
   m_Layer: 5
-  m_Name: EmptyBar Bottom
+  m_Name: EmptyBar Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -466,7 +466,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 831075439, guid: 09ea2ba618ef4b944a621078f13b8de9, type: 3}
+  m_Sprite: {fileID: 247549054, guid: 8930e048d7e0d850da9fa753fe35ed1c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -488,7 +488,7 @@ GameObject:
   - component: {fileID: 3084618266370891730}
   - component: {fileID: 5391353265221663129}
   m_Layer: 5
-  m_Name: FilledBar Top
+  m_Name: FilledBar Bottom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -541,7 +541,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1671719195, guid: 09ea2ba618ef4b944a621078f13b8de9, type: 3}
+  m_Sprite: {fileID: 1978548156, guid: 8930e048d7e0d850da9fa753fe35ed1c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

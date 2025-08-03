@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: Liberika
   itemIcon: {fileID: -6044248865464538472, guid: dcbfdf849d4149fa8aeef0b677bf339d, type: 3}
   category: 1
+  stackColor: {r: 0.5372549, g: 0.34117648, b: 0.21568629, a: 1}
   sweetness: 0
   bitterness: 2
   temperature: 2

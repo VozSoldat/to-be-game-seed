@@ -15,6 +15,7 @@ MonoBehaviour:
   itemName: Lumaka
   itemIcon: {fileID: 2022327523836002510, guid: dcbfdf849d4149fa8aeef0b677bf339d, type: 3}
   category: 1
+  stackColor: {r: 0.75294125, g: 0.52156866, b: 0.32156864, a: 1}
   sweetness: 0
   bitterness: 1
   temperature: 2

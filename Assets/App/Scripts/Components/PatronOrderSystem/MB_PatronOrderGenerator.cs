@@ -26,7 +26,7 @@ public class MB_PatronOrderGenerator : MonoBehaviour
 {
     IMatrixCalculator _matrixCalculator;
 
-    [SerializeField] ItemData[] _operandItemDataset;
+    [SerializeField] ItemListUI _itemListUI;
     [SerializeField] int _combinationSize = 2;
     [SerializeField] CalculatorType _calculatorType;
 
@@ -54,6 +54,10 @@ public class MB_PatronOrderGenerator : MonoBehaviour
             itemData.sweetness = Math.Clamp(array[0], _sweetnessClamp.min, _sweetnessClamp.max); 
             itemData.bitterness = Math.Clamp(array[1], _bitternessClamp.min, _bitternessClamp.max);
             itemData.temperature = Math.Clamp(array[2], _temperatureClamp.min, _temperatureClamp.max);
+            
+            // Note: When using the matrix calculator directly, we don't have source items
+            // to determine buffs, so this method doesn't include buffs
+            
             return itemData;
         })
         .ToArray();
@@ -67,14 +71,13 @@ public class MB_PatronOrderGenerator : MonoBehaviour
 
     public CombinationResult[] GetCombinationsWithSources()
     {
-        // Get all possible combinations from the calculator
         var combinations = GetAllCombinationIndices(_combinationSize);
         var results = new CombinationResult[combinations.Count];
 
         for (int i = 0; i < combinations.Count; i++)
         {
             var indices = combinations[i];
-            var sourceItems = indices.Select(index => _operandItemDataset[index]).ToArray();
+            var sourceItems = indices.Select(index => _itemListUI.items[index]).ToArray();
             
             // Calculate the combined stats
             int combinedSweetness = sourceItems.Sum(item => item.sweetness);
@@ -87,6 +90,19 @@ public class MB_PatronOrderGenerator : MonoBehaviour
             combinedItem.bitterness = Math.Clamp(combinedBitterness, _bitternessClamp.min, _bitternessClamp.max);
             combinedItem.temperature = Math.Clamp(combinedTemperature, _temperatureClamp.min, _temperatureClamp.max);
             combinedItem.itemName = string.Join(" + ", sourceItems.Select(item => item.itemName));
+
+            var allBuffs = new System.Collections.Generic.HashSet<ItemBuff>();
+            foreach (var item in sourceItems)
+            {
+                if (item.itemBuffs != null)
+                {
+                    foreach (var buff in item.itemBuffs)
+                    {
+                        allBuffs.Add(buff);
+                    }
+                }
+            }
+            combinedItem.itemBuffs = allBuffs.ToArray();
             
             results[i] = new CombinationResult(combinedItem, sourceItems);
         }
@@ -97,7 +113,7 @@ public class MB_PatronOrderGenerator : MonoBehaviour
     private System.Collections.Generic.List<int[]> GetAllCombinationIndices(int combinationSize)
     {
         var results = new System.Collections.Generic.List<int[]>();
-        int numOperands = _operandItemDataset.Length;
+        int numOperands = _itemListUI.items.Length;
         
         if (_calculatorType == CalculatorType.MatrixCombinationCalculator)
         {
@@ -145,16 +161,19 @@ public class MB_PatronOrderGenerator : MonoBehaviour
 
     void OnValidate()
     {
-        _matrixCalculator = _calculatorType switch
+        if (_itemListUI != null && _itemListUI.items != null && _itemListUI.items.Length > 0)
         {
-            CalculatorType.MatrixCombinationCalculator => new MatrixCombinationCalculator(
-                ItemDataToArrayOfArray(_operandItemDataset)
-            ),
-            CalculatorType.MatrixRepetitiveCombinationCalculator => new MatrixRepetitiveCombinationCalculator(
-                ItemDataToArrayOfArray(_operandItemDataset)
-            ),
-            _ => throw new System.NotImplementedException($"Calculator type {_calculatorType} is not implemented.")
-        };
+            _matrixCalculator = _calculatorType switch
+            {
+                CalculatorType.MatrixCombinationCalculator => new MatrixCombinationCalculator(
+                    ItemDataToArrayOfArray(_itemListUI.items)
+                ),
+                CalculatorType.MatrixRepetitiveCombinationCalculator => new MatrixRepetitiveCombinationCalculator(
+                    ItemDataToArrayOfArray(_itemListUI.items)
+                ),
+                _ => throw new System.NotImplementedException($"Calculator type {_calculatorType} is not implemented.")
+            };
+        }
     }
 }
 
