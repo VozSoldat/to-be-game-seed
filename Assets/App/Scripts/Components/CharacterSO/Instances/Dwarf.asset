@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Dwarf
   m_EditorClassIdentifier: 
   characterName: Dwarf
-  staticSprite: {fileID: 0}
-  idleAnimation: {fileID: 0}
-  drinkAnimation: {fileID: 0}
+  staticSprite: {fileID: 6507509044187893667, guid: d32aaa23ca22126a7aaecd7da21d4392, type: 3}
+  idleAnimation: {fileID: 7400000, guid: b89e497344cdfd6a5aae1e23f56a5339, type: 2}
+  drinkAnimation: {fileID: 7400000, guid: 3116cd5c212196642a9f5a7064bf65ab, type: 2}
