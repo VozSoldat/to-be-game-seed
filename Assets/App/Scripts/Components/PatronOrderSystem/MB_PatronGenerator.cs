@@ -4,24 +4,17 @@ using UnityEngine;
 
 public class MB_PatronGenerator : MonoBehaviour
 {
-    [SerializeField] private List<PatronDTO> _patrons;
+    [SerializeField] private List<SO_Character> _characters;
 
-    public void GetRandomPatron()
+    public SO_Character GetRandomPatron()
     {
-        if (_patrons == null || _patrons.Count == 0)
+        if (_characters == null || _characters.Count == 0)
         {
             Debug.LogWarning("No patrons available to generate.");
-            // return default;
+            return null;
         }
-        int randomIndex = UnityEngine.Random.Range(0, _patrons.Count);
-        Debug.Log($"Generated patron: {_patrons[randomIndex].Name}");
-        // return _patrons[randomIndex];
+        int randomIndex = UnityEngine.Random.Range(0, _characters.Count);
+        return _characters[randomIndex];
     }
 
-}
-[Serializable]
-public struct PatronDTO
-{
-    public string Name;
-    public Sprite PatronSprite;
 }
