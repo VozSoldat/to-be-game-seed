@@ -22,6 +22,9 @@ public class ItemData : ScriptableObject
 {
     public string itemName;
     public Sprite itemIcon;
+
+    public VisualRepresentation visualRepresentation; 
+
     public ItemCategory category;
 
     public Color stackColor = Color.white;

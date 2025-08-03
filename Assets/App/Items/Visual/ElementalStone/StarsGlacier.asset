@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb28d423a49102489761220b0a2e242, type: 3}
+  m_Name: StarsGlacier
+  m_EditorClassIdentifier: 
+  smallCupVisual: {fileID: 5227146836268634874, guid: dabe4268f26bd8cd6b5a1a4f1f99c2f1, type: 3}
+  mediumCupVisual: {fileID: -9097291817113510075, guid: dabe4268f26bd8cd6b5a1a4f1f99c2f1, type: 3}
+  largeCupVisual: {fileID: -3157872554804826386, guid: dabe4268f26bd8cd6b5a1a4f1f99c2f1, type: 3}

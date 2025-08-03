@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a53491efc198d0b47bb6234c4827a82f, type: 3}
   m_Name: ReferensiOrder
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: asdasd
   itemIcon: {fileID: 0}
   category: 0
   stackColor: {r: 1, g: 1, b: 1, a: 1}
   sweetness: 0
-  bitterness: 0
+  bitterness: 3
   temperature: 0
   itemBuffs: 

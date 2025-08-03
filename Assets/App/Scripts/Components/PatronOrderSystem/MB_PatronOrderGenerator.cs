@@ -26,10 +26,10 @@ public class MB_PatronOrderGenerator : MonoBehaviour
 {
     IMatrixCalculator _matrixCalculator;
 
-    [SerializeField] ItemListUI _itemListUI;
     [SerializeField] private ItemData[] _operandItemDataset;
     [SerializeField] int _combinationSize = 2;
     [SerializeField] CalculatorType _calculatorType;
+    [SerializeField] private SO_CharaDanPesan charaDanPesan;
 
     [Header("ItemData Stat Clamping")]
     [SerializeField] WrappStat _sweetnessClamp = new WrappStat { min = 0, max = 5 };
@@ -38,15 +38,6 @@ public class MB_PatronOrderGenerator : MonoBehaviour
 
     private void Start()
     {
-        if (_itemListUI == null)
-        {
-            // _itemListUI = FindObjectOfType<ItemListUI>();
-            _itemListUI = FindFirstObjectByType<ItemListUI>();
-            if (_itemListUI == null)
-            {
-                Debug.LogError("ItemListUI component not found in the scene. PatronOrderGenerator will not work correctly.");
-            }
-        }
 
         // Initialize the matrix calculator
         InitializeMatrixCalculator();
@@ -54,12 +45,6 @@ public class MB_PatronOrderGenerator : MonoBehaviour
 
     void InitializeMatrixCalculator()
     {
-        if (_itemListUI == null || _itemListUI.items == null || _itemListUI.items.Length == 0)
-        {
-            Debug.LogWarning("ItemListUI is not assigned or has no items. Matrix calculator will not be initialized.");
-            return;
-        }
-
         _matrixCalculator = _calculatorType switch
         {
             CalculatorType.MatrixCombinationCalculator => new MatrixCombinationCalculator(
@@ -92,8 +77,6 @@ public class MB_PatronOrderGenerator : MonoBehaviour
             itemData.bitterness = Math.Clamp(array[1], _bitternessClamp.min, _bitternessClamp.max);
             itemData.temperature = Math.Clamp(array[2], _temperatureClamp.min, _temperatureClamp.max);
             return itemData;
-
-
         })
         .ToArray();
     }
@@ -101,10 +84,11 @@ public class MB_PatronOrderGenerator : MonoBehaviour
     public ItemData[] GetCombinations()
     {
         var resultArrays = _matrixCalculator.GetSumsForCombinationSize(_combinationSize);
+
         return ArrayOfArrayToItemData(resultArrays);
     }
 
-    public CombinationResult[] GetCombinationsWithSources()
+    public void CreateCombinationsWithSources()
     {
         // Get all possible combinations from the calculator
         var combinations = GetAllCombinationIndices(_combinationSize);
@@ -143,7 +127,26 @@ public class MB_PatronOrderGenerator : MonoBehaviour
             results[i] = new CombinationResult(combinedItem, sourceItems);
         }
 
-        return results;
+        // Select a random combination
+        if (results.Length > 0)
+        {
+            int randomIndex = UnityEngine.Random.Range(0, results.Length);
+            var selectedResult = results[randomIndex];
+            
+            Debug.Log($"Generated order: {selectedResult.combinedItem.itemName}");
+            Debug.Log($"Source items: {string.Join(", ", System.Array.ConvertAll(selectedResult.sourceItems, item => item.itemName))}");
+            Debug.Log($"Combined Sweetness: {selectedResult.combinedItem.sweetness}, Bitterness: {selectedResult.combinedItem.bitterness}, Temperature: {selectedResult.combinedItem.temperature}");
+            
+            charaDanPesan.characterOrder.itemName = selectedResult.combinedItem.itemName;
+            charaDanPesan.characterOrder.sweetness = selectedResult.combinedItem.sweetness;
+            charaDanPesan.characterOrder.bitterness = selectedResult.combinedItem.bitterness;
+            charaDanPesan.characterOrder.temperature = selectedResult.combinedItem.temperature;
+            charaDanPesan.characterOrder.itemBuffs = selectedResult.combinedItem.itemBuffs;
+        }
+        else
+        {
+            Debug.LogWarning("No combinations were generated!");
+        }
     }
 
     private System.Collections.Generic.List<int[]> GetAllCombinationIndices(int combinationSize)
@@ -197,12 +200,6 @@ public class MB_PatronOrderGenerator : MonoBehaviour
 
     void OnValidate()
     {
-        if (_itemListUI == null)
-        {
-            // Try to find ItemListUI in the scene if not assigned
-            _itemListUI = FindObjectOfType<ItemListUI>();
-        }
-
         InitializeMatrixCalculator();
     }
 }

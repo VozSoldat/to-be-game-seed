@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fb28d423a49102489761220b0a2e242, type: 3}
+  m_Name: NectarEssence
+  m_EditorClassIdentifier: 
+  smallCupVisual: {fileID: -7218675919073102791, guid: 7ac0ec4ef5be840d2b5481e949be4cb4, type: 3}
+  mediumCupVisual: {fileID: 7217836331535655787, guid: 7ac0ec4ef5be840d2b5481e949be4cb4, type: 3}
+  largeCupVisual: {fileID: -2119564304867821999, guid: 7ac0ec4ef5be840d2b5481e949be4cb4, type: 3}
