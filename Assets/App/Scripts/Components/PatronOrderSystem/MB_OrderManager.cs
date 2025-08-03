@@ -2,11 +2,12 @@ using UnityEngine;
 
 public class MB_OrderManager : MonoBehaviour
 {
-  [SerializeField] private MB_PatronOrderGenerator patronOrderGenerator;
-  [SerializeField] private MB_BrewingStack brewingStack;
-  [SerializeField] private MB_ShowScoreSubmit showScoreSubmit;
-  public ItemData order;
-  public ItemData[] orderSourceItems; 
+    [SerializeField] private MB_PatronOrderGenerator patronOrderGenerator;
+    [SerializeField] private MB_BrewingStack brewingStack;
+    [SerializeField] private MB_ShowScoreSubmit showScoreSubmit;
+    public ItemData order;
+    public ItemData[] orderSourceItems;
+    public int finalScore;
 
     void OnEnable()
     {
@@ -18,10 +19,10 @@ public class MB_OrderManager : MonoBehaviour
         CombinationResult[] combinations = patronOrderGenerator.GetCombinationsWithSources();
         int totalCombination = combinations.Length;
         var selectedCombination = combinations[Random.Range(0, totalCombination)];
-        
+
         order = selectedCombination.combinedItem;
         orderSourceItems = selectedCombination.sourceItems;
-        
+
         // Debug.Log($"Generated order: {order.itemName}");
         // Debug.Log($"Source items: {string.Join(", ", System.Array.ConvertAll(orderSourceItems, item => item.itemName))}");
     }
@@ -48,11 +49,12 @@ public class MB_OrderManager : MonoBehaviour
         int scoreTemperature = GetSimilarityScore(totalTemperature, orderTemperature);
 
         int nilai = (scoreSweetness + scoreBitterness + scoreTemperature) / 3;
+        finalScore += nilai;
         Debug.Log(scoreBitterness);
         Debug.Log(scoreSweetness);
         Debug.Log(scoreTemperature);
         Debug.Log(nilai);
-        
+
         return nilai;
     }
 }
