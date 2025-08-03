@@ -1195,7 +1195,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 5a8d6ce448b551c4aa824059ab9887b2, type: 2}
   - {fileID: 11400000, guid: 5063ac0973ef36544846c3bada939146, type: 2}
   - {fileID: 11400000, guid: e60162b596b5129488c4960245a94685, type: 2}
-  _combinationSize: 3
+  _combinationSizeChoices: 030000000400000005000000
   _calculatorType: 0
   charaDanPesan: {fileID: 11400000, guid: 7e34a10673dfa2e4fb3d0b44e8e3e478, type: 2}
   _sweetnessClamp:
@@ -2741,6 +2741,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 128536875480631714, guid: 7a85c2de2b5df1a44b911d128a22da64, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 128536875480631714, guid: 7a85c2de2b5df1a44b911d128a22da64, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -3022,6 +3026,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2359740288006917257, guid: 7a85c2de2b5df1a44b911d128a22da64, type: 3}
       propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359740288006917257, guid: 7a85c2de2b5df1a44b911d128a22da64, type: 3}
+      propertyPath: m_SizeDelta.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2359740288006917257, guid: 7a85c2de2b5df1a44b911d128a22da64, type: 3}
@@ -3405,6 +3413,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5149890680377852479, guid: 7a85c2de2b5df1a44b911d128a22da64, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5149890680377852479, guid: 7a85c2de2b5df1a44b911d128a22da64, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
@@ -3614,7 +3626,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8473117778249787742, guid: 7a85c2de2b5df1a44b911d128a22da64, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 147.08
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8473117778249787742, guid: 7a85c2de2b5df1a44b911d128a22da64, type: 3}
       propertyPath: m_SizeDelta.y
@@ -4812,7 +4824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   brewingStack: {fileID: 80544475}
   charaDanPesan: {fileID: 11400000, guid: 7e34a10673dfa2e4fb3d0b44e8e3e478, type: 2}
-  saveFileSetup: {fileID: 2013728393}
+  gradeScore: {fileID: 0}
 --- !u!1 &1512306258
 GameObject:
   m_ObjectHideFlags: 0
