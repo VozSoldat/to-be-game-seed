@@ -939,10 +939,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6172288192501311505, guid: a4d854b4271a87d48b5ddddadb6a129a, type: 3}
-      propertyPath: onValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1045072967}
     - target: {fileID: 8249354616839280041, guid: a4d854b4271a87d48b5ddddadb6a129a, type: 3}
       propertyPath: m_Name
       value: Music coklat
