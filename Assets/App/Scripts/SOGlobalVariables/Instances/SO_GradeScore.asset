@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34267b06b8d06d24093ce00303141365, type: 3}
   m_Name: SO_GradeScore
   m_EditorClassIdentifier: 
-  scoreBitterness: 0
-  scoreSweetness: 0
-  scoreTemperature: 0
+  scoreBitterness: 50
+  scoreSweetness: 50
+  scoreTemperature: 50
   scoreBuff: 0
-  finalScore: 0
+  finalScore: 150

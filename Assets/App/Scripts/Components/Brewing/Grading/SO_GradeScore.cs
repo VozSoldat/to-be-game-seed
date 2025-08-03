@@ -29,6 +29,11 @@ public class SO_GradeScore : ScriptableObject
         #endif
     }
     
+    public int GetCurrentScore()
+    {
+       return scoreBitterness + scoreSweetness + scoreTemperature + scoreBuff;
+    }
+    
     public void ResetScores()
     {
         scoreBitterness = 0;
@@ -36,8 +41,8 @@ public class SO_GradeScore : ScriptableObject
         scoreTemperature = 0;
         scoreBuff = 0;
         finalScore = 0;
-        #if UNITY_EDITOR
+#if UNITY_EDITOR
         UnityEditor.EditorUtility.SetDirty(this);
-        #endif
+#endif
     }
 }
