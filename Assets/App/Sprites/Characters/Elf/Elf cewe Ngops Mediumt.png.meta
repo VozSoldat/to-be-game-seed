@@ -61,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -99,7 +99,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,10 +127,10 @@ TextureImporter:
       name: Elf cewe Ngops Mediumt_0
       rect:
         serializedVersion: 2
-        x: 18
+        x: 0
         y: 0
-        width: 114
-        height: 153
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,10 +149,10 @@ TextureImporter:
       name: Elf cewe Ngops Mediumt_1
       rect:
         serializedVersion: 2
-        x: 166
+        x: 148
         y: 0
-        width: 114
-        height: 153
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +171,10 @@ TextureImporter:
       name: Elf cewe Ngops Mediumt_2
       rect:
         serializedVersion: 2
-        x: 314
+        x: 296
         y: 0
-        width: 114
-        height: 153
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +193,10 @@ TextureImporter:
       name: Elf cewe Ngops Mediumt_3
       rect:
         serializedVersion: 2
-        x: 461
+        x: 444
         y: 0
-        width: 115
-        height: 153
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,9 +215,9 @@ TextureImporter:
       name: Elf cewe Ngops Mediumt_4
       rect:
         serializedVersion: 2
-        x: 609
+        x: 592
         y: 0
-        width: 133
+        width: 148
         height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -237,10 +237,10 @@ TextureImporter:
       name: Elf cewe Ngops Mediumt_5
       rect:
         serializedVersion: 2
-        x: 757
+        x: 740
         y: 0
-        width: 115
-        height: 142
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,9 +259,9 @@ TextureImporter:
       name: Elf cewe Ngops Mediumt_6
       rect:
         serializedVersion: 2
-        x: 886
+        x: 888
         y: 0
-        width: 134
+        width: 148
         height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: Elf cewe Ngops Mediumt_7
       rect:
         serializedVersion: 2
-        x: 1053
+        x: 1036
         y: 0
-        width: 115
-        height: 153
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,10 +303,10 @@ TextureImporter:
       name: Elf cewe Ngops Mediumt_8
       rect:
         serializedVersion: 2
-        x: 1202
+        x: 1184
         y: 0
-        width: 114
-        height: 153
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,7 +325,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 10b175109b1a74de69966fd7984458d9
     internalID: 0
     vertices: []
     indices: 

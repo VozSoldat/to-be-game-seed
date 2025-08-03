@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class FinishButtonLogic : MonoBehaviour
+public class MB_FinishButtonLogic : MonoBehaviour
 {
     
     void Start()

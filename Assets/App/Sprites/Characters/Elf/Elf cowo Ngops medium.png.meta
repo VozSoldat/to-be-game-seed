@@ -61,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -99,7 +99,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -127,10 +127,10 @@ TextureImporter:
       name: Elf cowo Ngops medium_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 1
-        width: 138
-        height: 155
+        x: 0
+        y: 0
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,10 +149,10 @@ TextureImporter:
       name: Elf cowo Ngops medium_1
       rect:
         serializedVersion: 2
-        x: 154
-        y: 1
-        width: 138
-        height: 155
+        x: 148
+        y: 0
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,10 +171,10 @@ TextureImporter:
       name: Elf cowo Ngops medium_2
       rect:
         serializedVersion: 2
-        x: 302
-        y: 8
-        width: 138
-        height: 148
+        x: 296
+        y: 0
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +193,10 @@ TextureImporter:
       name: Elf cowo Ngops medium_3
       rect:
         serializedVersion: 2
-        x: 449
-        y: 8
-        width: 139
-        height: 148
+        x: 444
+        y: 0
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,10 +215,10 @@ TextureImporter:
       name: Elf cowo Ngops medium_4
       rect:
         serializedVersion: 2
-        x: 598
-        y: 8
-        width: 138
-        height: 148
+        x: 592
+        y: 0
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -237,10 +237,10 @@ TextureImporter:
       name: Elf cowo Ngops medium_5
       rect:
         serializedVersion: 2
-        x: 746
-        y: 8
-        width: 138
-        height: 130
+        x: 740
+        y: 0
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -259,10 +259,10 @@ TextureImporter:
       name: Elf cowo Ngops medium_6
       rect:
         serializedVersion: 2
-        x: 894
-        y: 8
-        width: 138
-        height: 148
+        x: 888
+        y: 0
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -281,10 +281,10 @@ TextureImporter:
       name: Elf cowo Ngops medium_7
       rect:
         serializedVersion: 2
-        x: 1041
-        y: 8
-        width: 139
-        height: 148
+        x: 1036
+        y: 0
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -303,10 +303,10 @@ TextureImporter:
       name: Elf cowo Ngops medium_8
       rect:
         serializedVersion: 2
-        x: 1190
-        y: 8
-        width: 138
-        height: 148
+        x: 1184
+        y: 0
+        width: 148
+        height: 161
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -325,7 +325,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 39733144f3fd73962a29b423b21e8d13
     internalID: 0
     vertices: []
     indices: 
