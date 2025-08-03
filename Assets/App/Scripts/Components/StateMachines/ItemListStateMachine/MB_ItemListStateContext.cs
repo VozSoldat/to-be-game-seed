@@ -1,6 +1,8 @@
+using System;
 using System.Collections.Generic;
 using StateMachines;
 using UnityEngine;
+using UnityEngine.UI;
 
 namespace StateMachines.ItemListStateMachine
 {
@@ -14,6 +16,13 @@ namespace StateMachines.ItemListStateMachine
         [Header("name of current category")]
         private string _currentCategoryName;
         [SerializeField] private TMPro.TextMeshProUGUI categoryText;
+
+        [Header("Buttons to Control its State")]
+        public ButtonAndPlace coffeeButtonPlace;
+        public ButtonAndPlace elementalStoneButtonPlace;
+        public ButtonAndPlace milkButtonPlace;
+        public ButtonAndPlace magicItemButtonPlace;
+
 
         private readonly Dictionary<ItemCategory, string> _displayNames = new()
         {
@@ -65,12 +74,30 @@ namespace StateMachines.ItemListStateMachine
         {
             base.TransitionToState(newState);
         }
-        
+
         // Public methods to transition to specific states
         public void ShowGlassItems() => TransitionToState(ItemListStateEnum.Glass);
         public void ShowCoffeeItems() => TransitionToState(ItemListStateEnum.Coffee);
         public void ShowElementalStoneItems() => TransitionToState(ItemListStateEnum.ElementalStone);
         public void ShowMilkItems() => TransitionToState(ItemListStateEnum.Milk);
         public void ShowMagicItems() => TransitionToState(ItemListStateEnum.MagicItem);
+
+        /// <summary>
+        /// Returns to the Glass state, which is the default state.
+        /// </summary>
+        /// <remarks>
+        /// Useful for the TRASH button
+        /// </remarks>
+        public void ReturnToGlassState()
+        {
+            TransitionToState(ItemListStateEnum.Glass);
+        }
+    }
+
+    [Serializable]
+    public class ButtonAndPlace
+    {
+        public Button button;
+        public Image place;
     }
 }
