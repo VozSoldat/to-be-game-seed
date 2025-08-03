@@ -7,7 +7,7 @@ public class CombinationResult
 {
     public ItemData combinedItem;
     public ItemData[] sourceItems;
-    
+
     public CombinationResult(ItemData combined, ItemData[] sources)
     {
         combinedItem = combined;
@@ -27,6 +27,7 @@ public class MB_PatronOrderGenerator : MonoBehaviour
     IMatrixCalculator _matrixCalculator;
 
     [SerializeField] ItemListUI _itemListUI;
+    [SerializeField] private ItemData[] _operandItemDataset;
     [SerializeField] int _combinationSize = 2;
     [SerializeField] CalculatorType _calculatorType;
 
@@ -34,6 +35,41 @@ public class MB_PatronOrderGenerator : MonoBehaviour
     [SerializeField] WrappStat _sweetnessClamp = new WrappStat { min = 0, max = 5 };
     [SerializeField] WrappStat _bitternessClamp = new WrappStat { min = 0, max = 5 };
     [SerializeField] WrappStat _temperatureClamp = new WrappStat { min = 0, max = 5 };
+
+    private void Start()
+    {
+        if (_itemListUI == null)
+        {
+            _itemListUI = FindObjectOfType<ItemListUI>();
+            if (_itemListUI == null)
+            {
+                Debug.LogError("ItemListUI component not found in the scene. PatronOrderGenerator will not work correctly.");
+            }
+        }
+
+        // Initialize the matrix calculator
+        InitializeMatrixCalculator();
+    }
+
+    void InitializeMatrixCalculator()
+    {
+        if (_itemListUI == null || _itemListUI.items == null || _itemListUI.items.Length == 0)
+        {
+            Debug.LogWarning("ItemListUI is not assigned or has no items. Matrix calculator will not be initialized.");
+            return;
+        }
+
+        _matrixCalculator = _calculatorType switch
+        {
+            CalculatorType.MatrixCombinationCalculator => new MatrixCombinationCalculator(
+                ItemDataToArrayOfArray(_operandItemDataset)
+            ),
+            CalculatorType.MatrixRepetitiveCombinationCalculator => new MatrixRepetitiveCombinationCalculator(
+                ItemDataToArrayOfArray(_operandItemDataset)
+            ),
+            _ => throw new System.NotImplementedException($"Calculator type {_calculatorType} is not implemented.")
+        };
+    }
 
 
     int[][] ItemDataToArrayOfArray(ItemData[] items)
@@ -45,20 +81,18 @@ public class MB_PatronOrderGenerator : MonoBehaviour
             item.temperature
         }).ToArray();
     }
-    
+
     ItemData[] ArrayOfArrayToItemData(int[][] arrays)
     {
         return arrays.Select<int[], ItemData>(array =>
         {
             var itemData = ScriptableObject.CreateInstance<ItemData>();
-            itemData.sweetness = Math.Clamp(array[0], _sweetnessClamp.min, _sweetnessClamp.max); 
+            itemData.sweetness = Math.Clamp(array[0], _sweetnessClamp.min, _sweetnessClamp.max);
             itemData.bitterness = Math.Clamp(array[1], _bitternessClamp.min, _bitternessClamp.max);
             itemData.temperature = Math.Clamp(array[2], _temperatureClamp.min, _temperatureClamp.max);
-            
-            // Note: When using the matrix calculator directly, we don't have source items
-            // to determine buffs, so this method doesn't include buffs
-            
             return itemData;
+
+
         })
         .ToArray();
     }
@@ -71,19 +105,20 @@ public class MB_PatronOrderGenerator : MonoBehaviour
 
     public CombinationResult[] GetCombinationsWithSources()
     {
+        // Get all possible combinations from the calculator
         var combinations = GetAllCombinationIndices(_combinationSize);
         var results = new CombinationResult[combinations.Count];
 
         for (int i = 0; i < combinations.Count; i++)
         {
             var indices = combinations[i];
-            var sourceItems = indices.Select(index => _itemListUI.items[index]).ToArray();
-            
+            var sourceItems = indices.Select(index => _operandItemDataset[index]).ToArray();
+
             // Calculate the combined stats
             int combinedSweetness = sourceItems.Sum(item => item.sweetness);
             int combinedBitterness = sourceItems.Sum(item => item.bitterness);
             int combinedTemperature = sourceItems.Sum(item => item.temperature);
-            
+
             // Create the combined item
             var combinedItem = ScriptableObject.CreateInstance<ItemData>();
             combinedItem.sweetness = Math.Clamp(combinedSweetness, _sweetnessClamp.min, _sweetnessClamp.max);
@@ -103,7 +138,7 @@ public class MB_PatronOrderGenerator : MonoBehaviour
                 }
             }
             combinedItem.itemBuffs = allBuffs.ToArray();
-            
+
             results[i] = new CombinationResult(combinedItem, sourceItems);
         }
 
@@ -113,8 +148,8 @@ public class MB_PatronOrderGenerator : MonoBehaviour
     private System.Collections.Generic.List<int[]> GetAllCombinationIndices(int combinationSize)
     {
         var results = new System.Collections.Generic.List<int[]>();
-        int numOperands = _itemListUI.items.Length;
-        
+        int numOperands = _operandItemDataset.Length;
+
         if (_calculatorType == CalculatorType.MatrixCombinationCalculator)
         {
             // Generate combinations without repetition
@@ -125,7 +160,7 @@ public class MB_PatronOrderGenerator : MonoBehaviour
             // Generate combinations with repetition
             GenerateCombinationsWithRepetition(new int[combinationSize], 0, 0, numOperands, results);
         }
-        
+
         return results;
     }
 
@@ -161,19 +196,13 @@ public class MB_PatronOrderGenerator : MonoBehaviour
 
     void OnValidate()
     {
-        if (_itemListUI != null && _itemListUI.items != null && _itemListUI.items.Length > 0)
+        if (_itemListUI == null)
         {
-            _matrixCalculator = _calculatorType switch
-            {
-                CalculatorType.MatrixCombinationCalculator => new MatrixCombinationCalculator(
-                    ItemDataToArrayOfArray(_itemListUI.items)
-                ),
-                CalculatorType.MatrixRepetitiveCombinationCalculator => new MatrixRepetitiveCombinationCalculator(
-                    ItemDataToArrayOfArray(_itemListUI.items)
-                ),
-                _ => throw new System.NotImplementedException($"Calculator type {_calculatorType} is not implemented.")
-            };
+            // Try to find ItemListUI in the scene if not assigned
+            _itemListUI = FindObjectOfType<ItemListUI>();
         }
+
+        InitializeMatrixCalculator();
     }
 }
 

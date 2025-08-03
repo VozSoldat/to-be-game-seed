@@ -6,8 +6,6 @@ public class MB_OrderManager : MonoBehaviour
     [SerializeField] private MB_PatronOrderGenerator patronOrderGenerator;
     [SerializeField] private MB_BrewingStack brewingStack;
     [SerializeField] private MB_ShowScoreSubmit showScoreSubmit;
- 
-    [SerializeField] private TMP_Text userReq;
 
     public ItemData order;
     public ItemData[] orderSourceItems;
@@ -38,11 +36,6 @@ public class MB_OrderManager : MonoBehaviour
         {
             buff = string.Join(", ", System.Array.ConvertAll(order.itemBuffs, b => b.ToString()));
         }
-        userReq.text = $"I would like a cup of coffee with \n" +
-            $"Buffs: {buff}\n" +
-            $"Bitterness: {order.bitterness}\n" +
-            $"Sweetness: {order.sweetness}\n" +
-            $"Temperature: {order.temperature}";
     }
 
     private int GetSimilarityScore(int a, int b)
