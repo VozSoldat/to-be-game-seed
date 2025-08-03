@@ -30,7 +30,7 @@ public class CharacterLoader : MonoBehaviour
 
     private IEnumerator PlayDrinkAnimationWithDelay()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(2f);
 
         animator.Play("Drinking");
 

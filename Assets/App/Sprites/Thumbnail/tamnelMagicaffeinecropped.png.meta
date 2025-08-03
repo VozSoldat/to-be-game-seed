@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: ffb211b212d1cbc7ca585232d8682de1
+guid: 647c99a3a01b3bc4796f73551c830517
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2834816866031520189
-    second: StartButton_0
-  - first:
-      213: 144607954711566811
-    second: StartButton_1
-  - first:
-      213: 1409554443580534697
-    second: StartButton_2
+      213: -3030037664791198440
+    second: tamnelMagicaffeinecropped_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -106,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StartButton_0
+      name: tamnelMagicaffeinecropped_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 14
-        width: 57
-        height: 32
+        x: 0
+        y: 0
+        width: 511
+        height: 480
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -121,52 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 346b7e07415b8a8d0800000000000000
-      internalID: -2834816866031520189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StartButton_1
-      rect:
-        serializedVersion: 2
-        x: 68
-        y: 13
-        width: 57
-        height: 33
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: bd9574c2b20c10200800000000000000
-      internalID: 144607954711566811
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: StartButton_2
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 12
-        width: 57
-        height: 34
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9afe03d5c4ebf8310800000000000000
-      internalID: 1409554443580534697
+      spriteID: 81501163cc423f5d0800000000000000
+      internalID: -3030037664791198440
       vertices: []
       indices: 
       edges: []
@@ -185,9 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      StartButton_0: -2834816866031520189
-      StartButton_1: 144607954711566811
-      StartButton_2: 1409554443580534697
+      tamnelMagicaffeinecropped_0: -3030037664791198440
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
