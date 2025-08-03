@@ -30,7 +30,7 @@ public class MB_StackVisualizer : MonoBehaviour
     {
         if (brewingStack == null)
         {
-            brewingStack = FindObjectOfType<MB_BrewingStack>();
+            brewingStack = FindAnyObjectByType<MB_BrewingStack>();
             if (brewingStack == null)
             {
                 Debug.LogError("No BrewingStack found in the scene!");
