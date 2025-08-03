@@ -19,9 +19,27 @@ public class MB_PatronGenerator : MonoBehaviour
         return _characters[randomIndex];
     }
 
+    bool IsPatronRepeated(SO_Character newpatron)
+    {
+        if (charaDanPesan.character.characterName == newpatron.characterName)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+
+    }
     public void ApplyRandomPatron()
     {
         SO_Character randomPatron = GetRandomPatron();
+
+        if (IsPatronRepeated(randomPatron))
+        {
+            ApplyRandomPatron();
+        }
+
         if (randomPatron != null)
         {
             charaDanPesan.character.characterName = randomPatron.characterName;
