@@ -26,7 +26,6 @@ public class MB_PatronOrderGenerator : MonoBehaviour
 {
     IMatrixCalculator _matrixCalculator;
 
-    [SerializeField] ItemListUI _itemListUI;
     [SerializeField] private ItemData[] _operandItemDataset;
     [SerializeField] int _combinationSize = 2;
     [SerializeField] CalculatorType _calculatorType;
@@ -38,14 +37,6 @@ public class MB_PatronOrderGenerator : MonoBehaviour
 
     private void Start()
     {
-        if (_itemListUI == null)
-        {
-            _itemListUI = FindObjectOfType<ItemListUI>();
-            if (_itemListUI == null)
-            {
-                Debug.LogError("ItemListUI component not found in the scene. PatronOrderGenerator will not work correctly.");
-            }
-        }
 
         // Initialize the matrix calculator
         InitializeMatrixCalculator();
@@ -53,12 +44,6 @@ public class MB_PatronOrderGenerator : MonoBehaviour
 
     void InitializeMatrixCalculator()
     {
-        if (_itemListUI == null || _itemListUI.items == null || _itemListUI.items.Length == 0)
-        {
-            Debug.LogWarning("ItemListUI is not assigned or has no items. Matrix calculator will not be initialized.");
-            return;
-        }
-
         _matrixCalculator = _calculatorType switch
         {
             CalculatorType.MatrixCombinationCalculator => new MatrixCombinationCalculator(
@@ -196,12 +181,6 @@ public class MB_PatronOrderGenerator : MonoBehaviour
 
     void OnValidate()
     {
-        if (_itemListUI == null)
-        {
-            // Try to find ItemListUI in the scene if not assigned
-            _itemListUI = FindObjectOfType<ItemListUI>();
-        }
-
         InitializeMatrixCalculator();
     }
 }
