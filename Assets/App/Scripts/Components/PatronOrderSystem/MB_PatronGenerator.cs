@@ -6,6 +6,8 @@ public class MB_PatronGenerator : MonoBehaviour
 {
     [SerializeField] private List<SO_Character> _characters;
 
+    [SerializeField] SO_CharaDanPesan charaDanPesan;
+
     public SO_Character GetRandomPatron()
     {
         if (_characters == null || _characters.Count == 0)
@@ -15,6 +17,19 @@ public class MB_PatronGenerator : MonoBehaviour
         }
         int randomIndex = UnityEngine.Random.Range(0, _characters.Count);
         return _characters[randomIndex];
+    }
+
+    public void ApplyRandomPatron()
+    {
+        SO_Character randomPatron = GetRandomPatron();
+        if (randomPatron != null)
+        {
+            charaDanPesan.character.characterName = randomPatron.characterName;
+            charaDanPesan.character.staticSprite = randomPatron.staticSprite;
+            charaDanPesan.character.idleAnimation = randomPatron.idleAnimation;
+            charaDanPesan.character.drinkAnimation = randomPatron.drinkAnimation;
+            Debug.Log($"Generated Patron: {randomPatron.characterName}");
+        }
     }
 
 }

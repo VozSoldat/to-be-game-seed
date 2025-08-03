@@ -231,6 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 462475109}
   - component: {fileID: 462475110}
+  - component: {fileID: 462475111}
   m_Layer: 0
   m_Name: Generator
   m_TagString: Untagged
@@ -265,17 +266,40 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da2418a362c710c429826670d6c2d784, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _patrons:
-  - Name: Dwarf
-    PatronSprite: {fileID: 5175804588053458776, guid: bff45fce89592affab28c8c833c6da75, type: 3}
-  - Name: Elf Woman
-    PatronSprite: {fileID: -6298156628998492132, guid: ed83b7e290dd8e41d85e322ea926e3ea, type: 3}
-  - Name: Elf Man
-    PatronSprite: {fileID: -4304961661352353587, guid: 3568fa6681ab45c7699e0b7e5d8915d2, type: 3}
-  - Name: Witch
-    PatronSprite: {fileID: 6410855352560526350, guid: 112cdb8e09de63644afd4661eb8c56b0, type: 3}
-  - Name: Knight
-    PatronSprite: {fileID: -4269943649335447789, guid: 3a2a394b4a0cf6625aaf2605c472c88c, type: 3}
+  _characters:
+  - {fileID: 11400000, guid: f5880a730cf6bae4898479eaf882b59f, type: 2}
+  - {fileID: 11400000, guid: 06282f6a4fa4af54296d04da23030e39, type: 2}
+  charaDanPesan: {fileID: 11400000, guid: 7e34a10673dfa2e4fb3d0b44e8e3e478, type: 2}
+--- !u!114 &462475111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 462475108}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff6fe40630232df4eb7ffdf3ad1e85ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _operandItemDataset:
+  - {fileID: 11400000, guid: 5be823dd2eb53f248802730aadfcdd90, type: 2}
+  - {fileID: 11400000, guid: 9e08ffeef6a00ba47aa4b89f4b327d69, type: 2}
+  - {fileID: 11400000, guid: e60162b596b5129488c4960245a94685, type: 2}
+  - {fileID: 11400000, guid: 5063ac0973ef36544846c3bada939146, type: 2}
+  - {fileID: 11400000, guid: 93301aae0c7727e4bb06c0fb378a56c9, type: 2}
+  _combinationSize: 2
+  _calculatorType: 0
+  charaDanPesan: {fileID: 11400000, guid: 7e34a10673dfa2e4fb3d0b44e8e3e478, type: 2}
+  _sweetnessClamp:
+    min: 0
+    max: 5
+  _bitternessClamp:
+    min: 0
+    max: 5
+  _temperatureClamp:
+    min: 0
+    max: 5
 --- !u!1 &653751174
 GameObject:
   m_ObjectHideFlags: 0
@@ -575,9 +599,21 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
+      - m_Target: {fileID: 462475111}
+        m_TargetAssemblyTypeName: MB_PatronOrderGenerator, Assembly-CSharp
+        m_MethodName: CreateCombinationsWithSources
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 462475110}
         m_TargetAssemblyTypeName: MB_PatronGenerator, Assembly-CSharp
-        m_MethodName: GetRandomPatron
+        m_MethodName: ApplyRandomPatron
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
