@@ -31,17 +31,7 @@ public class StackBar : StatBar
 
         GenerateColoredBar(items);
     }
-    
-    public void Update(Stack<ItemData> items)
-    {
-        if (items == null || items.Count == 0)
-        {
-            GenerateEmptyBar();
-            return;
-        }
 
-        GenerateColoredBar(items);
-    }
 
     private void GenerateEmptyBar()
     {
