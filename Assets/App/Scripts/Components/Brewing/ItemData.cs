@@ -24,6 +24,8 @@ public class ItemData : ScriptableObject
     public Sprite itemIcon;
     public ItemCategory category;
 
+    public Color stackColor = Color.white;
+
     [Range(-5, 5)]
     public int sweetness;
 
@@ -32,6 +34,6 @@ public class ItemData : ScriptableObject
 
     [Range(-5, 5)]
     public int temperature;
-    
+
     public ItemBuff[] itemBuffs;
 }
