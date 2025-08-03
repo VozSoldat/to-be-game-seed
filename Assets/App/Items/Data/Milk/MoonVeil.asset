@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53491efc198d0b47bb6234c4827a82f, type: 3}
+  m_Name: MoonVeil
+  m_EditorClassIdentifier: 
+  itemName: MoonVeil
+  itemIcon: {fileID: -983324115653866399, guid: 8918f5b444b7a7cbab1f28c54d1516c1, type: 3}
+  visualRepresentation: {fileID: 11400000, guid: 5e24bcf7ab899e34a8ed804366305684, type: 2}
+  category: 3
+  stackColor: {r: 0.63529414, g: 0.74509805, b: 0.77647066, a: 1}
+  sweetness: 2
+  bitterness: -1
+  temperature: 0
+  itemBuffs: 

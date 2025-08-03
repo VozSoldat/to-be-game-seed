@@ -52,7 +52,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -90,7 +90,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,6 +111,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -118,10 +131,10 @@ TextureImporter:
       name: IceStarsGlacier-Sheet_0
       rect:
         serializedVersion: 2
-        x: 81
-        y: 40
-        width: 15
-        height: 13
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,10 +153,10 @@ TextureImporter:
       name: IceStarsGlacier-Sheet_1
       rect:
         serializedVersion: 2
-        x: 96
-        y: 40
-        width: 15
-        height: 9
+        x: 64
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,10 +175,10 @@ TextureImporter:
       name: IceStarsGlacier-Sheet_2
       rect:
         serializedVersion: 2
-        x: 145
-        y: 46
-        width: 15
-        height: 13
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -180,77 +193,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: IceStarsGlacier-Sheet_3
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 46
-        width: 15
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 922e9ec0ddeda7ef0800000000000000
-      internalID: -109530199931362775
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IceStarsGlacier-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 32
-        width: 15
-        height: 13
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a7342a69ede53d170800000000000000
-      internalID: 8202003656474772346
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IceStarsGlacier-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 15
-        height: 9
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0b5e20b1b6514ed20800000000000000
-      internalID: 3306791576155645360
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2ec9b49d82cb3e548b48c38a7f501c20
     internalID: 0
     vertices: []
     indices: 
@@ -263,9 +210,6 @@ TextureImporter:
       IceStarsGlacier-Sheet_0: 5227146836268634874
       IceStarsGlacier-Sheet_1: -9097291817113510075
       IceStarsGlacier-Sheet_2: -3157872554804826386
-      IceStarsGlacier-Sheet_3: -109530199931362775
-      IceStarsGlacier-Sheet_4: 8202003656474772346
-      IceStarsGlacier-Sheet_5: 3306791576155645360
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

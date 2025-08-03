@@ -9,6 +9,7 @@ public class MB_BrewingStack : MonoBehaviour
     [SerializeField] private MB_ShowStatUI StackInformation;
 
     [SerializeField] private StackBar stackBar;
+    [SerializeField] private MB_StackVisualizer stackVisualizer;
 
     private bool isMagicItemPoured = false;
 
@@ -31,6 +32,12 @@ public class MB_BrewingStack : MonoBehaviour
         if (stackBar != null)
         {
             stackBar.UpdateDisplay();
+        }
+        
+        // Update visualization when glass size changes
+        if (stackVisualizer != null)
+        {
+            stackVisualizer.OnGlassSizeChanged();
         }
     }
 
@@ -86,6 +93,12 @@ public class MB_BrewingStack : MonoBehaviour
         {
             Debug.LogWarning("StackInformation is not set or does not implement MB_ShowStatUI.");
         }
+        
+        // Update visualization when a new item is added
+        if (stackVisualizer != null)
+        {
+            stackVisualizer.UpdateVisualization();
+        }
     }
 
     public void ResetPours()
@@ -97,6 +110,12 @@ public class MB_BrewingStack : MonoBehaviour
         if (stackBar != null)
         {
             stackBar.UpdateDisplay();
+        }
+        
+        // Update visualization when stack is reset
+        if (stackVisualizer != null)
+        {
+            stackVisualizer.UpdateVisualization();
         }
     }
 
