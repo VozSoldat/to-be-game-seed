@@ -10,6 +10,7 @@ public class StackBar : StatBar
     
     void Start()
     {
+        
         UpdateDisplay();
     }
 
