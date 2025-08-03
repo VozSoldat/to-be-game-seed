@@ -14,9 +14,9 @@ public class ItemCategoryButtonManager : MonoBehaviour
     [Header("State Context Reference")]
     public MB_ItemListStateContext stateContext;
 
-    [Header("Button Visual Feedback")]
-    public Color selectedColor = Color.cyan;
-    public Color normalColor = Color.white;
+    // [Header("Button Visual Feedback")]
+    // public Color selectedColor = Color.cyan;
+    // public Color normalColor = Color.white;
 
     private Button currentSelectedButton;
 
@@ -69,13 +69,13 @@ public class ItemCategoryButtonManager : MonoBehaviour
         // Reset previous button color
         if (currentSelectedButton != null)
         {
-            currentSelectedButton.GetComponent<Image>().color = normalColor;
+            // currentSelectedButton.GetComponent<Image>().color = normalColor;
         }
 
         // Set new selected button color
         if (selectedButton != null)
         {
-            selectedButton.GetComponent<Image>().color = selectedColor;
+            // selectedButton.GetComponent<Image>().color = selectedColor;
             currentSelectedButton = selectedButton;
         }
     }
