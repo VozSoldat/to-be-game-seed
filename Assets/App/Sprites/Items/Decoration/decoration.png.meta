@@ -105,6 +105,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -112,10 +125,10 @@ TextureImporter:
       name: decoration_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 8
-        width: 80
-        height: 66
+        x: 0
+        y: 0
+        width: 96
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -134,19 +147,19 @@ TextureImporter:
       name: decoration_1
       rect:
         serializedVersion: 2
-        x: 125
-        y: 7
-        width: 41
-        height: 25
+        x: 96
+        y: 0
+        width: 96
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 76b2e0e215ca6b620800000000000000
+      spriteID: c27f43444ddb83c48a5a9a5329a4e8cd
       internalID: 2789606483867609959
       vertices: []
       indices: 
@@ -156,19 +169,19 @@ TextureImporter:
       name: decoration_2
       rect:
         serializedVersion: 2
-        x: 198
-        y: 28
-        width: 84
-        height: 37
+        x: 192
+        y: 0
+        width: 96
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 05623407f70e1dab0800000000000000
+      spriteID: 03d3bea2fafb6664dae65684a05dd0f6
       internalID: -4984956474573511088
       vertices: []
       indices: 
@@ -178,19 +191,19 @@ TextureImporter:
       name: decoration_3
       rect:
         serializedVersion: 2
-        x: 294
+        x: 288
         y: 0
-        width: 81
-        height: 71
+        width: 96
+        height: 74
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6412e2af596bdd020800000000000000
+      spriteID: 26626f97480cab74e8efd3d454932a85
       internalID: 2368249734330458438
       vertices: []
       indices: 
@@ -200,7 +213,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2df3f79e14b251240a608923d043d892
     internalID: 0
     vertices: []
     indices: 
