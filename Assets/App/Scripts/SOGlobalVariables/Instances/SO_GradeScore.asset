@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SO_GradeScore
   m_EditorClassIdentifier: 
   scoreBitterness: 50
-  scoreSweetness: -100
-  scoreTemperature: 50
+  scoreSweetness: -19
+  scoreTemperature: -62
   scoreBuff: 0
-  finalScore: 0
+  finalScore: -31
