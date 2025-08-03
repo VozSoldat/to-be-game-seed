@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbeb494f161648144b684c603d88567a, type: 3}
   m_Name: ElfMan
   m_EditorClassIdentifier: 
-  characterName: Dwarf
-  staticSprite: {fileID: 0}
-  idleAnimation: {fileID: 0}
-  drinkAnimation: {fileID: 0}
+  characterName: ElfMan
+  staticSprite: {fileID: -9045168767513072730, guid: a42be3250ad20cd60bdeebb2b83716c8, type: 3}
+  idleAnimation: {fileID: 7400000, guid: 7e18cbddb3a22ef53ab38b371147de92, type: 2}
+  drinkAnimation: {fileID: 7400000, guid: 8a2b99e460f622597a08b66b2d37fc59, type: 2}

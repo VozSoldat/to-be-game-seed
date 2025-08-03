@@ -6,6 +6,6 @@ public class MB_CompleteButtonLogic : MonoBehaviour
     public void OnCompletedButtonClicked()
     {
         CharacterSceneState.CurrentState = CharacterAnimState.Drink;
-        SceneManager.LoadScene("PostBrewingScene");
+        SceneManager.LoadScene("PostBrewScene");
     }
 }

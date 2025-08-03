@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -21,14 +22,32 @@ public class CharacterLoader : MonoBehaviour
         }
         else if (state == CharacterAnimState.Drink)
         {
-            animator.Play("Drinking");
-            Invoke(nameof(ReturnToIdleScene), characterData.drinkAnimation.length);
+            StartCoroutine(PlayDrinkAnimationWithDelay());
         }
     }
 
-    private void ReturnToIdleScene()
+    private IEnumerator PlayDrinkAnimationWithDelay()
+    {
+        yield return new WaitForSeconds(5f);
+
+        animator.Play("Drinking");
+
+        if (characterData != null && characterData.drinkAnimation != null)
+        {
+            yield return new WaitForSeconds(characterData.drinkAnimation.length + 1f);
+        }
+
+        ReturnToIdleState();
+        BackToCustomerScene();
+    }
+
+    private void ReturnToIdleState()
     {
         CharacterSceneState.CurrentState = CharacterAnimState.Idle;
-        SceneManager.LoadScene("Scene_Idle");
     }
+    
+    private void BackToCustomerScene()
+    {
+        SceneManager.LoadScene("CustomerInquiry");
+    } 
 }

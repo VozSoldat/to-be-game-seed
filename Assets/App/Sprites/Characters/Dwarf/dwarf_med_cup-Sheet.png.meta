@@ -1,10 +1,25 @@
 fileFormatVersion: 2
-guid: 056b555fc712ad23a9697536819592fc
+guid: d32aaa23ca22126a7aaecd7da21d4392
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 9039141669566354615
-    second: ButtonComplete_0
+      213: 6507509044187893667
+    second: dwarf_med_cup-Sheet_0
+  - first:
+      213: 9048017531176386273
+    second: dwarf_med_cup-Sheet_1
+  - first:
+      213: 3221223226015284935
+    second: dwarf_med_cup-Sheet_2
+  - first:
+      213: 3529431789514183234
+    second: dwarf_med_cup-Sheet_3
+  - first:
+      213: 4946268321757830289
+    second: dwarf_med_cup-Sheet_4
+  - first:
+      213: 364680940569105609
+    second: dwarf_med_cup-Sheet_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +115,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ButtonComplete_0
+      name: dwarf_med_cup-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 23
+        y: 0
         width: 64
-        height: 18
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -115,52 +130,118 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b41fe0057b717d70800000000000000
-      internalID: 9039141669566354615
+      spriteID: 3af06775ff05f4a50800000000000000
+      internalID: 6507509044187893667
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ButtonComplete_1
+      name: dwarf_med_cup-Sheet_1
       rect:
         serializedVersion: 2
         x: 64
-        y: 23
+        y: 0
         width: 64
-        height: 18
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 1c32aca747d4de6f9aec868e553e99e7
-      internalID: 1710317065
+      spriteID: 1ee76439104019d70800000000000000
+      internalID: 9048017531176386273
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ButtonComplete_2
+      name: dwarf_med_cup-Sheet_2
       rect:
         serializedVersion: 2
         x: 128
-        y: 23
+        y: 0
         width: 64
-        height: 17
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: c63166559527c79c994fbc76e3039f6d
-      internalID: 1298890150
+      spriteID: 7cef0e0157514bc20800000000000000
+      internalID: 3221223226015284935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dwarf_med_cup-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 242d6f8438f0bf030800000000000000
+      internalID: 3529431789514183234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dwarf_med_cup-Sheet_4
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19c942a05dca4a440800000000000000
+      internalID: 4946268321757830289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dwarf_med_cup-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c41afe126b9f0500800000000000000
+      internalID: 364680940569105609
       vertices: []
       indices: 
       edges: []
@@ -169,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 9b2cfc09c4f7c9319a54d5fe90659711
+    spriteID: be0c0086563c96fc094db8ad2c4b1bab
     internalID: 0
     vertices: []
     indices: 
@@ -179,9 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ButtonComplete_0: 9039141669566354615
-      ButtonComplete_1: 1710317065
-      ButtonComplete_2: 1298890150
+      dwarf_med_cup-Sheet_0: 6507509044187893667
+      dwarf_med_cup-Sheet_1: 9048017531176386273
+      dwarf_med_cup-Sheet_2: 3221223226015284935
+      dwarf_med_cup-Sheet_3: 3529431789514183234
+      dwarf_med_cup-Sheet_4: 4946268321757830289
+      dwarf_med_cup-Sheet_5: 364680940569105609
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
