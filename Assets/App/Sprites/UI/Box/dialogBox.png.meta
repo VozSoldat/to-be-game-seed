@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: ffb211b212d1cbc7ca585232d8682de1
+guid: bd0ae0e498db7d94ca2261ba25d80cd4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2834816866031520189
-    second: StartButton_0
+      213: 7511849366553914079
+    second: dialogBox_0
   - first:
-      213: 144607954711566811
-    second: StartButton_1
+      213: -7253177620909191498
+    second: dialogBox_1
   - first:
-      213: 1409554443580534697
-    second: StartButton_2
+      213: 4751454290388147452
+    second: dialogBox_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,13 +52,13 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 16, y: 16, z: 4, w: 4}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
@@ -106,67 +106,67 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: StartButton_0
+      name: dialogBox_0
       rect:
         serializedVersion: 2
         x: 4
-        y: 14
-        width: 57
-        height: 32
+        y: 6
+        width: 10
+        height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 346b7e07415b8a8d0800000000000000
-      internalID: -2834816866031520189
+      spriteID: fda60bb03337f3860800000000000000
+      internalID: 7511849366553914079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartButton_1
+      name: dialogBox_1
       rect:
         serializedVersion: 2
-        x: 68
+        x: 10
         y: 13
-        width: 57
-        height: 33
+        width: 67
+        height: 37
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: bd9574c2b20c10200800000000000000
-      internalID: 144607954711566811
+      spriteID: 6be05ecf169875b90800000000000000
+      internalID: -7253177620909191498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: StartButton_2
+      name: dialogBox_2
       rect:
         serializedVersion: 2
-        x: 132
-        y: 12
-        width: 57
-        height: 34
+        x: 0
+        y: 0
+        width: 8
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 9afe03d5c4ebf8310800000000000000
-      internalID: 1409554443580534697
+      spriteID: cfc5719b08e80f140800000000000000
+      internalID: 4751454290388147452
       vertices: []
       indices: 
       edges: []
@@ -175,8 +175,8 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
-    internalID: 0
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
@@ -185,9 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      StartButton_0: -2834816866031520189
-      StartButton_1: 144607954711566811
-      StartButton_2: 1409554443580534697
+      dialogBox_0: 7511849366553914079
+      dialogBox_1: -7253177620909191498
+      dialogBox_2: 4751454290388147452
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
