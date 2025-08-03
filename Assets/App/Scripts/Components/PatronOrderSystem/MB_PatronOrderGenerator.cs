@@ -54,6 +54,10 @@ public class MB_PatronOrderGenerator : MonoBehaviour
             itemData.sweetness = Math.Clamp(array[0], _sweetnessClamp.min, _sweetnessClamp.max); 
             itemData.bitterness = Math.Clamp(array[1], _bitternessClamp.min, _bitternessClamp.max);
             itemData.temperature = Math.Clamp(array[2], _temperatureClamp.min, _temperatureClamp.max);
+            
+            // Note: When using the matrix calculator directly, we don't have source items
+            // to determine buffs, so this method doesn't include buffs
+            
             return itemData;
         })
         .ToArray();
@@ -67,7 +71,6 @@ public class MB_PatronOrderGenerator : MonoBehaviour
 
     public CombinationResult[] GetCombinationsWithSources()
     {
-        // Get all possible combinations from the calculator
         var combinations = GetAllCombinationIndices(_combinationSize);
         var results = new CombinationResult[combinations.Count];
 
@@ -87,6 +90,19 @@ public class MB_PatronOrderGenerator : MonoBehaviour
             combinedItem.bitterness = Math.Clamp(combinedBitterness, _bitternessClamp.min, _bitternessClamp.max);
             combinedItem.temperature = Math.Clamp(combinedTemperature, _temperatureClamp.min, _temperatureClamp.max);
             combinedItem.itemName = string.Join(" + ", sourceItems.Select(item => item.itemName));
+
+            var allBuffs = new System.Collections.Generic.HashSet<ItemBuff>();
+            foreach (var item in sourceItems)
+            {
+                if (item.itemBuffs != null)
+                {
+                    foreach (var buff in item.itemBuffs)
+                    {
+                        allBuffs.Add(buff);
+                    }
+                }
+            }
+            combinedItem.itemBuffs = allBuffs.ToArray();
             
             results[i] = new CombinationResult(combinedItem, sourceItems);
         }
