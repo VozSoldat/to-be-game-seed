@@ -13,7 +13,7 @@ public class GlassListUI : MonoBehaviour
         PopulateGlassList();
     }
 
-    private void PopulateGlassList()
+    public void PopulateGlassList()
     {
         Debug.Log("Populating Glass List UI with available glasses.");
         foreach (Transform child in contentParent)

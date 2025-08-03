@@ -7,6 +7,8 @@ public class DropTarget : MonoBehaviour, IDropHandler
     public ItemData itemData;
     public MB_BrewingStack brewingStack;
     public Image glassImage;
+
+
     private void Start()
     {
         if (glassImage == null)
@@ -32,8 +34,8 @@ public class DropTarget : MonoBehaviour, IDropHandler
                 return;
             }
 
-            Debug.Log($"Used item: {dragged.itemData.itemName}");
             brewingStack.AddPour(dragged.itemData);
+            Debug.Log($"Used item: {dragged.itemData.itemName}");
         }
     }
 
