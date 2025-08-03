@@ -11,20 +11,27 @@ public class SO_BooleanVariable : ScriptableObject
     public bool Value;
     public void SetValue(bool value)
     {
+        // Only trigger the event if the value is actually changing.
+        if (Value == value)
+        {
+            return;
+        }
         Value = value;
-        NotifyValueChanged();
+        // NotifyValueChanged();
+        OnValueChanged?.Invoke(value);
+
     }
 
     public void SetValue(SO_BooleanVariable value)
     {
         Value = value.Value;
-        NotifyValueChanged();
+        // OnValueChanged?.Invoke(Value);
     }
 
-    public Action OnValueChanged;
+    public Action<bool> OnValueChanged;
 
-    public void NotifyValueChanged()
-    {
-        OnValueChanged?.Invoke();
-    }
+    // public void NotifyValueChanged()
+    // {
+    //     OnValueChanged?.Invoke();
+    // }
 }

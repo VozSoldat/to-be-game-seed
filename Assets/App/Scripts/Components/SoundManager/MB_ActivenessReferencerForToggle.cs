@@ -1,8 +1,10 @@
 using UnityEngine;
+using UnityEngine.UI;
 
-public class MB_ActivenessReferencer : MonoBehaviour
+public class MB_ActivenessReferencerForToggle : MonoBehaviour
 {
-    [SerializeField] AudioSource audioSource;
+    // [SerializeField] AudioSource audioSource;
+    [SerializeField] Toggle toggle;
     [SerializeField] SO_BooleanVariable isSoundActive;
 
     void OnEnable()
@@ -17,9 +19,9 @@ public class MB_ActivenessReferencer : MonoBehaviour
     
     void UpdateAudioSourceState(bool isActive)
     {
-        if (audioSource != null)
+        if (toggle != null)
         {
-            audioSource.mute = !isSoundActive.Value;
+            toggle.isOn = isSoundActive.Value;
         }
     }
 }
