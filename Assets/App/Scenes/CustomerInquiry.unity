@@ -858,10 +858,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Halo~
+  m_text: 'Hi~
 
 
-    Aku pesan kopi...'
+    Coffee, please...'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: b0eb148c29231694fab87bd1c123b838, type: 2}
   m_sharedMaterial: {fileID: 3263568304235011261, guid: b0eb148c29231694fab87bd1c123b838, type: 2}
