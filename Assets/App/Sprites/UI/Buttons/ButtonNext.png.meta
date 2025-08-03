@@ -1,16 +1,16 @@
 fileFormatVersion: 2
-guid: 97fee5cb18f67840ea5b235260a40364
+guid: 99ff85552ccbab541af94c91061c3c97
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 3005441102318027606
-    second: ButtonNext_0
+      213: 2285253087306306450
+    second: ButtonNext 1_0
   - first:
-      213: -6492124188130051818
-    second: ButtonNext_1
+      213: 7878638071569053441
+    second: ButtonNext 1_1
   - first:
-      213: -8704665257841005689
-    second: ButtonNext_2
+      213: -5939201787043072930
+    second: ButtonNext 1_2
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +43,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -81,7 +81,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -106,7 +106,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ButtonNext_0
+      name: ButtonNext 1_0
       rect:
         serializedVersion: 2
         x: 10
@@ -121,14 +121,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 653460152c875b920800000000000000
-      internalID: 3005441102318027606
+      spriteID: 293d1ca3399d6bf10800000000000000
+      internalID: 2285253087306306450
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ButtonNext_1
+      name: ButtonNext 1_1
       rect:
         serializedVersion: 2
         x: 73
@@ -143,14 +143,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 61979c8927757e5a0800000000000000
-      internalID: -6492124188130051818
+      spriteID: 107fdb1559b865d60800000000000000
+      internalID: 7878638071569053441
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ButtonNext_2
+      name: ButtonNext 1_2
       rect:
         serializedVersion: 2
         x: 137
@@ -165,8 +165,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 78be3b93111d23780800000000000000
-      internalID: -8704665257841005689
+      spriteID: e54bee12177b39da0800000000000000
+      internalID: -5939201787043072930
       vertices: []
       indices: 
       edges: []
@@ -185,9 +185,9 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      ButtonNext_0: 3005441102318027606
-      ButtonNext_1: -6492124188130051818
-      ButtonNext_2: -8704665257841005689
+      ButtonNext 1_0: 2285253087306306450
+      ButtonNext 1_1: 7878638071569053441
+      ButtonNext 1_2: -5939201787043072930
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -27,7 +27,9 @@ public class MB_PatronOrderGenerator : MonoBehaviour
     IMatrixCalculator _matrixCalculator;
 
     [SerializeField] private ItemData[] _operandItemDataset;
-    [SerializeField] int _combinationSize = 2;
+    int _combinationSize;
+    [SerializeField] int[] _combinationSizeChoices = new int[] { 3, 4, 5 };
+
     [SerializeField] CalculatorType _calculatorType;
     [SerializeField] private SO_CharaDanPesan charaDanPesan;
 
@@ -36,11 +38,13 @@ public class MB_PatronOrderGenerator : MonoBehaviour
     [SerializeField] WrappStat _bitternessClamp = new WrappStat { min = 0, max = 5 };
     [SerializeField] WrappStat _temperatureClamp = new WrappStat { min = 0, max = 5 };
 
-    private void Start()
+    private void Awake()
     {
 
         // Initialize the matrix calculator
         InitializeMatrixCalculator();
+
+        _combinationSize = _combinationSizeChoices[UnityEngine.Random.Range(0, _combinationSizeChoices.Length)];
     }
 
     void InitializeMatrixCalculator()
@@ -132,11 +136,11 @@ public class MB_PatronOrderGenerator : MonoBehaviour
         {
             int randomIndex = UnityEngine.Random.Range(0, results.Length);
             var selectedResult = results[randomIndex];
-            
+
             Debug.Log($"Generated order: {selectedResult.combinedItem.itemName}");
             Debug.Log($"Source items: {string.Join(", ", System.Array.ConvertAll(selectedResult.sourceItems, item => item.itemName))}");
             Debug.Log($"Combined Sweetness: {selectedResult.combinedItem.sweetness}, Bitterness: {selectedResult.combinedItem.bitterness}, Temperature: {selectedResult.combinedItem.temperature}");
-            
+
             charaDanPesan.characterOrder.itemName = selectedResult.combinedItem.itemName;
             charaDanPesan.characterOrder.sweetness = selectedResult.combinedItem.sweetness;
             charaDanPesan.characterOrder.bitterness = selectedResult.combinedItem.bitterness;

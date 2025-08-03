@@ -11,6 +11,8 @@ public class CharacterLoader : MonoBehaviour
     {
         if (characterData == null || animator == null) return;
 
+        animator.runtimeAnimatorController = characterData.animatorController;
+
         ApplyAnimState(CharacterSceneState.CurrentState);
     }
 
@@ -45,9 +47,9 @@ public class CharacterLoader : MonoBehaviour
     {
         CharacterSceneState.CurrentState = CharacterAnimState.Idle;
     }
-    
+
     private void BackToCustomerScene()
     {
         SceneManager.LoadScene("CustomerInquiry");
-    } 
+    }
 }

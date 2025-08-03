@@ -132,6 +132,7 @@ GameObject:
   - component: {fileID: 45675215}
   - component: {fileID: 45675214}
   - component: {fileID: 45675213}
+  - component: {fileID: 45675217}
   m_Layer: 5
   m_Name: CharacterDrinking
   m_TagString: Untagged
@@ -232,6 +233,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 45675211}
   m_CullTransparentMesh: 1
+--- !u!114 &45675217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 45675211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae7bcd8ad83ec02458e505e4fe1f63e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  characterAnimator: {fileID: 45675214}
+  characterReference: {fileID: 11400000, guid: c9606caa868f7d84dbc06beeb4b66b58, type: 2}
 --- !u!1 &422960224
 GameObject:
   m_ObjectHideFlags: 0

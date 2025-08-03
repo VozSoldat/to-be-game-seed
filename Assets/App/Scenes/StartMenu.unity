@@ -1485,7 +1485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3ea33f5c814663b4c90eb59dcfc2303f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetScene: Brewing
+  targetScene: CustomerInquiry
 --- !u!1001 &841181010
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dbeb494f161648144b684c603d88567a, type: 3}
   m_Name: ReferensiChara
   m_EditorClassIdentifier: 
-  characterName: 
-  staticSprite: {fileID: 0}
-  idleAnimation: {fileID: 0}
-  drinkAnimation: {fileID: 0}
+  characterName: ElfWoman
+  staticSprite: {fileID: -2560120341990301037, guid: eeb6c5422f81f2380abf21a7621a4781, type: 3}
+  idleAnimation: {fileID: 7400000, guid: 2514729096f3e259ca229f2901d99022, type: 2}
+  drinkAnimation: {fileID: 7400000, guid: 8a5cf1c9467d1e3eea80188f4c76d7da, type: 2}
+  animatorController: {fileID: 9100000, guid: 64f0cf270f838a27580ee7be06e45428, type: 2}

@@ -28,6 +28,7 @@ public class MB_PatronGenerator : MonoBehaviour
             charaDanPesan.character.staticSprite = randomPatron.staticSprite;
             charaDanPesan.character.idleAnimation = randomPatron.idleAnimation;
             charaDanPesan.character.drinkAnimation = randomPatron.drinkAnimation;
+            charaDanPesan.character.animatorController = randomPatron.animatorController;
             Debug.Log($"Generated Patron: {randomPatron.characterName}");
         }
     }
