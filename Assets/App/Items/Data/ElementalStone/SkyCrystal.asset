@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53491efc198d0b47bb6234c4827a82f, type: 3}
+  m_Name: SkyCrystal
+  m_EditorClassIdentifier: 
+  itemName: Sky Crystal
+  itemIcon: {fileID: 4131018277457715221, guid: d2baf994283cba9f78bed8819216223d, type: 3}
+  visualRepresentation: {fileID: 11400000, guid: 602f7b0d3d6031743ba757b7ed1f6607, type: 2}
+  category: 2
+  stackColor: {r: 0.5254902, g: 0.6313726, b: 0.8313726, a: 1}
+  sweetness: 2
+  bitterness: 0
+  temperature: -3
+  itemBuffs: 

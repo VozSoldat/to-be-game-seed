@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbeb494f161648144b684c603d88567a, type: 3}
+  m_Name: Dwarf
+  m_EditorClassIdentifier: 
+  characterName: Dwarf
+  staticSprite: {fileID: 6507509044187893667, guid: d32aaa23ca22126a7aaecd7da21d4392, type: 3}
+  idleAnimation: {fileID: 7400000, guid: b89e497344cdfd6a5aae1e23f56a5339, type: 2}
+  drinkAnimation: {fileID: 7400000, guid: 3116cd5c212196642a9f5a7064bf65ab, type: 2}
+  animatorController: {fileID: 9100000, guid: bfade4d9fd789dbd7aed98d4c781e73c, type: 2}

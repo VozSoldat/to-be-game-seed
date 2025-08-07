@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a53491efc198d0b47bb6234c4827a82f, type: 3}
+  m_Name: Tauvera
+  m_EditorClassIdentifier: 
+  itemName: Tauvera
+  itemIcon: {fileID: -8010453145305160687, guid: 8918f5b444b7a7cbab1f28c54d1516c1, type: 3}
+  visualRepresentation: {fileID: 11400000, guid: f0e4eb3190ca4e84d9ecee4649049d86, type: 2}
+  category: 3
+  stackColor: {r: 0.75294125, g: 0.73333335, b: 0.70980394, a: 1}
+  sweetness: 2
+  bitterness: -2
+  temperature: 0
+  itemBuffs: 

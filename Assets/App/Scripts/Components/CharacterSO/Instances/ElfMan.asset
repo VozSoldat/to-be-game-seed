@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbeb494f161648144b684c603d88567a, type: 3}
+  m_Name: ElfMan
+  m_EditorClassIdentifier: 
+  characterName: ElfMan
+  staticSprite: {fileID: -9045168767513072730, guid: a42be3250ad20cd60bdeebb2b83716c8, type: 3}
+  idleAnimation: {fileID: 7400000, guid: 7e18cbddb3a22ef53ab38b371147de92, type: 2}
+  drinkAnimation: {fileID: 7400000, guid: 8a2b99e460f622597a08b66b2d37fc59, type: 2}
+  animatorController: {fileID: 9100000, guid: 6bfbc7775e4f33196ac08d5ac22d4c48, type: 2}
